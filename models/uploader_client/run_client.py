@@ -7,7 +7,7 @@ from datetime import datetime  # Import datetime module
 ip_addr = '192.168.1.194'
 upload_url = f"http://{ip_addr}:5000/upload"  # Use an f-string
 
-data_path = "./../data"
+data_path = "~/data/data_32/"
 result_path = "./result/orin"
 
 with open(data_path + '/labels.json', 'r') as json_file:
