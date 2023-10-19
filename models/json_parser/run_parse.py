@@ -1,9 +1,13 @@
 import json
 import os 
 import sys
+import csv
 
-json_base_path = "/home/rouf-linux/models/json_parser/data/"
-result_base_path = "/home/rouf-linux/models/json_parser/result/"
+exp_no = 9
+exp = "exp_" + str(exp_no)
+json_base_path = "/home/rouf-linux/edge-computing/models/json_parser/data/"
+result_base_path = "/home/rouf-linux/edge-computing/models/json_parser/result/" + exp + "/"
+os.makedirs(result_base_path)
 
 procedures = ['detection', 'transfer']
 instances = [['orin', 'cloud_virginia'], ['orin', 'cloud_virginia', 'cloud_california']]
@@ -122,31 +126,128 @@ def get_camera_details(avg):
 def generate_result_csv_dirs(camera_details, csv_base_path):
     cameras_list = list(camera_details)
     for camera_name in cameras_list:
-        for procedure in procedures:
-            if procedure == "detection":
-                for model in models:
-                    os.makedirs(csv_base_path + "/" + camera_name + "/" + procedure + "/" + model)
-            else:
-                os.makedirs(csv_base_path + "/" + camera_name + "/" + procedure )
+        for procedure in range(len(procedures)):
+            for instance in range(len(instances[procedure])):
+                if procedures[procedure] == "detection":
+                    for model in models:
+                        os.makedirs(csv_base_path + "/" + camera_name + "/" + procedures[procedure]  +"/" + instances[procedure][instance] + "/" + model, exist_ok=True)
+                else: 
+                    os.makedirs(csv_base_path + "/" + camera_name + "/" + procedures[procedure] + "/" + instances[procedure][instance], exist_ok= True)
 
+def generate_csv(csv_base_path, 
+                 data, 
+                 camera_name, 
+                 specific_camera_details, 
+                 procedure, 
+                 instance, 
+                 model=None, 
+                 device=None, 
+                 transfer_metric=None):
+    csv_path = csv_base_path + camera_name + "/" + procedure + "/" + instance
+    if procedure == "detection": 
+        csv_path += "/" + model + "/" + device + ".csv"
+    else: 
+        csv_path += "/" + transfer_metric + ".csv"
+    
+    column_names = ["size", "image_quality", "1", "2", "4", "8", "16", "32"]
+    vivotek_image_quality_mapper = {
+        "streamid_0": {
+            "quality_1": "70kb",
+            "quality_2": "83kb",
+            "quality_3": "120kb",
+            "quality_4": "168kb",
+            "quality_5": "218kb",
+        },
+        "streamid_1": {
+            "quality_1": "11kb",
+            "quality_2": "13kb",
+            "quality_3": "19kb",
+            "quality_4": "25kb",
+            "quality_5": "31kb",
+        }
+    }
+    image_details = {}
+    for image_quality in specific_camera_details:
+        if "x" in image_quality:
+            pieces = image_quality.split("x")
+            size = int(pieces[0]) * int(pieces[1])
+            image_details[image_quality] = size
+        else: 
+            pieces = image_quality.split("/")
+            image_new_quality = vivotek_image_quality_mapper[pieces[0]][pieces[1]]
+            size = int(image_new_quality.replace("kb", ""))
+            image_details[image_quality] = size
+    
+    sorted_image_details = dict(sorted(image_details.items(), key=lambda item: item[1]))
+    
+    rows = []
+    rows.append(column_names)
+    for image_detail in sorted_image_details:
+        row = []
+        row.append(image_details[image_detail])
+        if "/" in image_detail:
+            pieces = image_detail.split("/")
+            image_quality = vivotek_image_quality_mapper[pieces[0]][pieces[1]]
+            row.append(image_quality)
+        else: 
+            row.append(image_detail)
+        
+        for i in range(6):
+            key = "/" + camera_name + "/" + image_detail + "/" + str(2**i) + "/"
+            print(procedure, instance, "searching: " , key)
+            if transfer_metric == None:
+                
+                elapsed_time = round(data[procedure][instance][key][model][device])
+            else: 
+                elapsed_time = round(data[procedure][instance][key][transfer_metric])
+            row.append(elapsed_time)
+        rows.append(row)
 
+    with open(csv_path, 'w', newline='') as csvfile:
+        csv_writer = csv.writer(csvfile)
 
-# def generate_detection_csv():
+        # Write each row to the CSV file
+        for row in rows:
+            csv_writer.writerow(row)
+    print(f'CSV file "{csv_path}" has been created successfully.')
+        
 
-# def generate_tranfer_csv():
-
-
-# def generate_csv(camera_details, csv_base_path, data):
-#     # generate detection csv
-#     generate_detection_csv(camera_details, csv_base_path, data)
-#     # generate transfer csv
-#     generate_tranfer_csv(camera_details, csv_base_path, data)
+def generate_all_csv(csv_base_path, data, camera_details): 
+    camera_names = list(camera_details)
+    for camera_name in camera_names:
+        specific_camera_details = camera_details[camera_name]
+        for procedure in range(len(procedures)):
+            for instance in range(len(instances[procedure])):
+                if procedures[procedure] == "detection":
+                    for model in models:
+                        for device in devices:
+                            generate_csv(csv_base_path, 
+                                        data, 
+                                        camera_name, 
+                                        specific_camera_details, 
+                                        procedures[procedure], 
+                                        instances[procedure][instance], 
+                                        model=model, 
+                                        device=device, 
+                                        transfer_metric=None)
+                else: 
+                    for transfer_metric in transfer_metrices:
+                        generate_csv(csv_base_path, 
+                                        data, 
+                                        camera_name, 
+                                        specific_camera_details, 
+                                        procedures[procedure], 
+                                        instances[procedure][instance], 
+                                        model=None, 
+                                        device=None, 
+                                        transfer_metric=transfer_metric)
 
 
 data = load_part_of_experiment(json_base_path)
 avg = calculate_average(data)
-camera_data_hierarchy = get_camera_details(avg)
+camera_data_hierarchy = get_camera_details(data[exp_no])
 generate_result_csv_dirs(camera_data_hierarchy, result_base_path)
+generate_all_csv(result_base_path, data[exp_no], camera_data_hierarchy)
 
 
 
