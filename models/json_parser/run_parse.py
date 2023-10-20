@@ -245,9 +245,9 @@ def generate_all_csv(csv_base_path, data, camera_details):
 
 data = load_part_of_experiment(json_base_path)
 avg = calculate_average(data)
-# camera_data_hierarchy = get_camera_details(data[exp_no])
-# generate_result_csv_dirs(camera_data_hierarchy, result_base_path)
-# generate_all_csv(result_base_path, data[exp_no], camera_data_hierarchy)
+camera_data_hierarchy = get_camera_details(avg)
+generate_result_csv_dirs(camera_data_hierarchy, result_base_path)
+generate_all_csv(result_base_path, avg, camera_data_hierarchy)
 
 
 
