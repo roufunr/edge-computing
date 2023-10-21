@@ -4,11 +4,11 @@ import time
 from datetime import datetime  # Import datetime module
 
 # Specify the URL of your Flask server
-ip_addr = '192.168.1.194'
+ip_addr = '54.67.31.203'
 upload_url = f"http://{ip_addr}:5000/upload"  # Use an f-string
 
 data_path = "/home/rouf-linux/data/data_32"
-result_path = "/home/rouf-linux/edge-computing/models/uploader_client/result/orin"
+result_path = "/home/rouf-linux/edge-computing/models/uploader_client/result/cloud_virginia"
 
 
 def delete_all_data_on_server(): 
@@ -16,7 +16,6 @@ def delete_all_data_on_server():
     delete_images_endpoint = f'http://{ip_addr}:5000/delete_all_images'
     try:
         response = requests.post(delete_images_endpoint)
-    
         if response.status_code == 200:
             print('All images deleted successfully.')
         else:
@@ -24,6 +23,8 @@ def delete_all_data_on_server():
     except Exception as e:
         print('An error occurred:', str(e))
 
+
+        
 with open(data_path + '/labels.json', 'r') as json_file:
     labels = json.load(json_file)
 
@@ -59,17 +60,16 @@ for i in range(10+1):
         }
         completed_data += len(image_files)
         print(str(i)  + "-> ""DONE", ((completed_data / total_data) * 100), "%")
-
-    print("client goes to sleep for 30 sec!")
-    time.sleep(5)
-    delete_all_data_on_server()
-    time.sleep(5)
-        
-
-
+    
     json_results = json.dumps(results, indent=2)
     date_time = datetime.utcfromtimestamp(time.time()).strftime('%Y%m%d_%H:%M:%S_utc')
     result_json_name = f'exp_{i}_client_side_transfer_time_{date_time}.json'  # Use an f-string
     with open(result_path + '/' + result_json_name, 'w') as json_file:
         json_file.write(json_results)
+    
+    print("client goes to sleep for 30 sec!")
+    time.sleep(10)
+    delete_all_data_on_server()
+    time.sleep(20)
+
 

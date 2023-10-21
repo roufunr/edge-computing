@@ -36,5 +36,17 @@ def upload_file():
 
     return jsonify({'transfer_time': transfer_time, 'disk_write_time': disk_write_time}), 200
 
+
+@app.route('/delete_all_images', methods=['POST'])
+def delete_all_images():
+    try:
+        for root, dirs, files in os.walk(upload_path):
+            for file in files:
+                os.remove(os.path.join(root, file))
+
+        return jsonify({'message': 'All images deleted successfully'}), 200
+    except Exception as e:
+        return jsonify({'error': 'An error occurred while deleting images'}), 500
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
