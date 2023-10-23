@@ -3,7 +3,7 @@ import os
 import sys
 import csv
 
-exp_no = "avg"
+exp_no = "median"
 exp = "exp_" + str(exp_no)
 json_base_path = "/home/rouf-linux/edge-computing/models/json_parser/data/"
 result_base_path = "/home/rouf-linux/edge-computing/models/json_parser/result/" + exp + "/"
@@ -105,6 +105,60 @@ def calculate_average(data):
                     key_avg = transfer_metric_avg
                 avg_data[procedures[procedure]][instances[procedure][instance]][key] = key_avg
     return avg_data
+
+def getMedian(data):
+    data.sort()
+    n = len(data)
+    if n % 2 == 1:
+        median = data[n // 2]
+    else:
+        # If the number of elements is even, the median is the average of the two middle elements
+        middle1 = data[n // 2 - 1]
+        middle2 = data[n // 2]
+        median = (middle1 + middle2) / 2
+    return median
+def calculate_median(data): 
+    total_exp = len(data)
+    keys = list(data[0]['detection']['orin'].keys())
+    median_data = {
+        'detection': {
+            'orin': {},
+            'cloud_virginia': {}
+        }, 
+        'transfer': {
+            'orin': {},
+            'cloud_virginia': {},
+            'cloud_california': {}
+        }
+    }
+
+    for key in keys:
+        for procedure in range(len(procedures)):
+            for instance in range(len(instances[procedure])):
+                key_median = {}
+                if procedures[procedure] == "detection": 
+                    model_median = {}
+                    for model in range(len(models)):
+                        device_median = {}
+                        for device in range(len(devices)):
+                            data_arr = []
+                            for i in range(total_exp): 
+                                data_arr.append(data[i][procedures[procedure]][instances[procedure][instance]][key][models[model]][devices[device]])
+                            device_median[devices[device]] = getMedian(data_arr)
+                        model_median[models[model]] = device_median
+                    key_median = model_median
+                        
+                else:
+                    transfer_metric_median= {}
+                    for transfer_metric in transfer_metrices:
+                        data_arr = []
+                        for i in range(total_exp): 
+                            data_arr.append(data[i][procedures[procedure]][instances[procedure][instance]][key][transfer_metric])
+                        transfer_metric_median[transfer_metric] = getMedian(data_arr)
+                    key_median = transfer_metric_median
+                median_data[procedures[procedure]][instances[procedure][instance]][key] = key_median
+    return median_data
+
 
 def get_camera_details(avg):
     keys = list(data[0]['detection']['orin'].keys())
@@ -245,9 +299,10 @@ def generate_all_csv(csv_base_path, data, camera_details):
 
 data = load_part_of_experiment(json_base_path)
 avg = calculate_average(data)
-camera_data_hierarchy = get_camera_details(avg)
+median = calculate_median(data)
+camera_data_hierarchy = get_camera_details(median)
 generate_result_csv_dirs(camera_data_hierarchy, result_base_path)
-generate_all_csv(result_base_path, avg, camera_data_hierarchy)
+generate_all_csv(result_base_path, median, camera_data_hierarchy)
 
 
 

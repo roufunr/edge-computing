@@ -3,8 +3,8 @@ import pandas
 import csv
 import json
 
-source_data_path = "/home/rouf-linux/edge-computing/transfer_detection_sum/source_data/"
-result_path = "/home/rouf-linux/edge-computing/transfer_detection_sum/result/"
+source_data_path = "/home/rouf-linux/edge-computing/transfer_detection_sum/source_data/current_data/"
+result_path = "/home/rouf-linux/edge-computing/transfer_detection_sum/result/current_result/"
 cameras = ["cam1", "cam2", "cam3", "cam4"]
 procedures = ["transfer", "detection"]
 instances = ["orin", "cloud_virginia"]
@@ -13,8 +13,8 @@ models = ["yolov5", "ssd", "retinanet"]
 devices = ["cuda", "cpu"]
 
 for camera in cameras:
-    transfer_instance = "cloud_california"
-    detection_instance = "cloud_virginia"
+    transfer_instance = "orin"
+    detection_instance = "orin"
     for model in models:
         for device in devices:
             print("processing ...", camera, transfer_instance, model, device)
