@@ -2,6 +2,10 @@ import cv2
 import torch
 import torchvision
 from torchvision.models.detection import retinanet_resnet50_fpn, RetinaNet_ResNet50_FPN_Weights
+import json
+import time
+import os
+from datetime import datetime
 
 retinanet_coco_class_mapper = {
     0: 'person',
@@ -97,6 +101,11 @@ retinanet_coco_class_mapper = {
     90: 'toaster'
 }
 
+source_dataset_base_path = "/home/ubuntu/edge-computing/models/test_data"
+result_base_path = "/home/ubuntu/edge-computing/models/accuracy_exp/result"
+total_experiment = 11
+models = ["yolov5", "ssd", "retinanet"]
+
 retinent_model = retinanet_resnet50_fpn(weights=RetinaNet_ResNet50_FPN_Weights.DEFAULT)
 retinent_model = retinent_model.to("cuda")
 retinent_model.eval()
@@ -156,9 +165,59 @@ def get_yolov5_object_list(images_path):
     for idx in range(len(images_path)):
         objects_list.append(results.pandas().xyxy[idx]['name'].tolist())
     return objects_list
+
+def get_object_list(images_path, model):
+    if model == "yolov5":
+        return get_yolov5_object_list(images_path)
+    elif model == "ssd": 
+        return get_ssd_object_list(images_path)
+    else:
+        return get_retinanet_object_list(images_path)
+
+with open(source_dataset_base_path + '/labels.json', 'r') as json_file:
+    labels = json.load(json_file)
+total_data = len(labels)
+path_dict = {}
+label_dict = {}
+for label in labels:
+    path = label['image_path']
+    objects = label['objects']
+    objects_name = []
+    for object in objects:
+        objects_name.append(object['name'])
+    image_name = path.split("/")[-1]
+    dir_path = path.replace(image_name, "")
+    if dir_path in path_dict:
+        path_dict[dir_path].append(source_dataset_base_path + path)
+        label_dict[dir_path].append(objects_name)
+    else:
+        path_dict[dir_path] = [source_dataset_base_path + path]
+        label_dict[dir_path] = [objects_name]
     
 
+   
 
+timestamp = time.time()
+parent_dir = result_base_path + "/" +  datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
+os.makedirs(parent_dir, exist_ok=True)
+for i in range(total_experiment): 
+    exp_dir = parent_dir + "/" + "exp_" + str(i)
+    os.makedirs(exp_dir)
+    for model in models:
+        result_dict = {}
+        for key in path_dict:
+            inferred_objects = get_object_list(path_dict[key], model)
+            labeled_objects = label_dict[key]
+            accuracies = []
+            for object_list_idx in range(len(labeled_objects)):
+                total_objects = len(labeled_objects[object_list_idx])
+                detected_objects = 0
+                for idx in range(len(labeled_objects[object_list_idx])):
+                    object_name = labeled_objects[object_list_idx][idx]
+                    if object_name in inferred_objects[object_list_idx]:
+                        detected_objects += 1
+                        inferred_objects[object_list_idx].remove(object_name)
+                accuracy = detected_objects / total_objects
 
 
 
