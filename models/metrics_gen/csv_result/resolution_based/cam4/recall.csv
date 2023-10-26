@@ -1,0 +1,11 @@
+recall- resolution/model,yolov5,ssd,retinanet
+streamid_1/quality_1,0.0,0.385,0.089
+streamid_1/quality_2,0.269,0.215,0.534
+streamid_1/quality_3,0.0,0.021,0.0
+streamid_1/quality_4,0.238,0.266,0.0
+streamid_1/quality_5,0.565,0.565,0.307
+streamid_0/quality_1,0.456,0.561,0.31
+streamid_0/quality_2,0.347,0.376,0.687
+streamid_0/quality_3,0.594,0.483,0.859
+streamid_0/quality_4,0.531,0.69,0.289
+streamid_0/quality_5,0.598,0.683,0.317

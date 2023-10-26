@@ -1,0 +1,11 @@
+accuracy- resolution/model,yolov5,ssd,retinanet
+streamid_1/quality_1,0.0,0.065,0.001
+streamid_1/quality_2,0.578,0.026,0.006
+streamid_1/quality_3,0.0,0.002,0.0
+streamid_1/quality_4,0.195,0.037,0.0
+streamid_1/quality_5,0.3,0.063,0.004
+streamid_0/quality_1,0.772,0.158,0.006
+streamid_0/quality_2,0.822,0.056,0.008
+streamid_0/quality_3,0.307,0.065,0.01
+streamid_0/quality_4,0.377,0.126,0.005
+streamid_0/quality_5,0.479,0.111,0.006
