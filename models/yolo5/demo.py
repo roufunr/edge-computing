@@ -25,6 +25,7 @@ results.save()  # or .show()
 
 results.xyxy[0]  # im1 predictions (tensor)
 results.pandas().xyxy[0]  # im1 predictions (pandas)
+print(results.pandas().xyxy[0]['name'],"\n", results.pandas().xyxy[0]['confidence'])
 #      xmin    ymin    xmax   ymax  confidence  class    name
 # 0  749.50   43.50  1148.0  704.5    0.874023      0  person
 # 1  433.50  433.50   517.5  714.5    0.687988     27     tie
