@@ -1,3 +1,4 @@
+import numpy as np
 import cv2
 import torch
 import torchvision
@@ -6,6 +7,11 @@ import json
 import time
 import os
 from datetime import datetime
+import sys
+import logging
+logging.basicConfig(filename='object_detection_calculate_metrics.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+sys.stdout = open('nohup.out', 'a')
+sys.stderr = sys.stdout
 
 retinanet_coco_class_mapper = {
     0: 'person',
@@ -101,8 +107,8 @@ retinanet_coco_class_mapper = {
     90: 'toaster'
 }
 
-source_dataset_base_path = "/home/ubuntu/edge-computing/models/test_data"
-result_base_path = "/home/ubuntu/edge-computing/models/accuracy_exp/result"
+source_dataset_base_path = "/home/ubuntu/data_32"
+result_base_path = "/home/ubuntu/edge-computing/models/metrics_gen/result"
 total_experiment = 11
 models = ["yolov5", "ssd", "retinanet"]
 
@@ -174,6 +180,98 @@ def get_object_list(images_path, model):
     else:
         return get_retinanet_object_list(images_path)
 
+
+
+def calculate_metrics(detected_objects, labeled_objects):
+    # detected_objects = ['person', 'chair', 'keyboard', 'person']
+    # labeled_objects = ['person', 'train', 'keyboard', 'mouse'
+    TP = 0
+    FP = 0
+    FN = 0
+
+    # Calculate TP, FP, and FN for each class
+    for obj in set(detected_objects + labeled_objects):
+        detected_count = detected_objects.count(obj)
+        labeled_count = labeled_objects.count(obj)
+        
+        TP += min(detected_count, labeled_count)
+        FP += max(0, detected_count - labeled_count)
+        FN += max(0, labeled_count - detected_count)
+
+    # Calculate accuracy, recall, and precision, handling the case where labeled_objects is empty
+    if TP + FP == 0:
+        accuracy = 0
+    else:
+        accuracy = TP / (TP + FP)
+
+    if TP + FN == 0:
+        recall = 0
+    else:
+        recall = TP / (TP + FN)
+
+    metrics = {
+        "TP": TP,
+        "FP": FP,
+        "FN": FN,
+        "accuracy": accuracy,
+        "recall": recall,
+    }
+    return metrics
+
+def calculate_average_median(metrics_list):
+    sum_metrics = {
+        "TP": 0,
+        "FP": 0,
+        "FN": 0,
+        "accuracy": 0,
+        "recall": 0,
+    }
+
+    tp_values = []
+    fp_values = []
+    fn_values = []
+    accuracy_values = []
+    recall_values = []
+
+    for metrics in metrics_list:
+        for key in sum_metrics.keys():
+            sum_metrics[key] += metrics[key]
+            if key == "TP":
+                tp_values.append(metrics[key])
+            elif key == "FP":
+                fp_values.append(metrics[key])
+            elif key == "FN":
+                fn_values.append(metrics[key])
+            elif key == "accuracy":
+                accuracy_values.append(metrics[key])
+            elif key == "recall":
+                recall_values.append(metrics[key])
+
+    # Calculate averages
+    num_tasks = len(metrics_list)
+    average_metrics = {key: value / num_tasks for key, value in sum_metrics.items()}
+
+    # Calculate medians
+    median_metrics = {
+        "TP": np.median(tp_values),
+        "FP": np.median(fp_values),
+        "FN": np.median(fn_values),
+        "accuracy": np.median(accuracy_values),
+        "recall": np.median(recall_values)
+    }
+
+    return average_metrics, median_metrics
+
+def seconds_to_hms(seconds):
+    hours = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    return hours, minutes, seconds
+
+
+
+
 with open(source_dataset_base_path + '/labels.json', 'r') as json_file:
     labels = json.load(json_file)
 total_data = len(labels)
@@ -200,25 +298,38 @@ for label in labels:
 timestamp = time.time()
 parent_dir = result_base_path + "/" +  datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
 os.makedirs(parent_dir, exist_ok=True)
-for i in range(total_experiment): 
-    exp_dir = parent_dir + "/" + "exp_" + str(i)
-    os.makedirs(exp_dir)
-    for model in models:
-        result_dict = {}
-        for key in path_dict:
-            inferred_objects = get_object_list(path_dict[key], model)
+for i in range(total_experiment):
+    exp_start_time = time.time() 
+    exp_json_file_path = parent_dir + "/" + "exp_" + str(i) + ".json"
+    result_dict = {}
+    completed_image_count = 0
+    for key in path_dict:
+        model_based_dict = {}
+        for model in models:
+            detected_objects = get_object_list(path_dict[key], model)
             labeled_objects = label_dict[key]
-            accuracies = []
-            for object_list_idx in range(len(labeled_objects)):
-                total_objects = len(labeled_objects[object_list_idx])
-                detected_objects = 0
-                for idx in range(len(labeled_objects[object_list_idx])):
-                    object_name = labeled_objects[object_list_idx][idx]
-                    if object_name in inferred_objects[object_list_idx]:
-                        detected_objects += 1
-                        inferred_objects[object_list_idx].remove(object_name)
-                accuracy = detected_objects / total_objects
-
-
-
+            metrics_list = []
+            for idx in range(len(labeled_objects)):
+                metrics = calculate_metrics(detected_objects[idx], labeled_objects[idx])
+                metrics_list.append(metrics)
+            mean, median = calculate_average_median(metrics_list)
+            model_based_dict[model] = {
+                "mean": mean,
+                "median": median,
+            }
+        result_dict[key] = model_based_dict
+        completed_image_count += len(path_dict[key])
+        logging.info("key: " + key)
+        progress_percent = round((completed_image_count/total_data) * 100, 2)
+        logging.info("exp #" + str(i + 1) + " PROGRESS -> " + str(progress_percent) + "%")
     
+    json_results = json.dumps(result_dict, indent=2)
+    with open(exp_json_file_path, 'w') as json_file:
+        json_file.write(json_results)
+    logging.info("exp #" + str(i + 1) + " DONE")
+    logging.info("exp #" + str(i + 1) + " GENERATED FILE NAME: " + exp_json_file_path)
+    exp_end_time = time.time()
+    elapsed_time = exp_end_time - exp_start_time
+    hours, minutes, seconds = seconds_to_hms(elapsed_time)
+    hms = f"{hours} hours, {minutes} minutes, {seconds} seconds"
+    logging.info("exp #" + str(i + 1) + " has TAKEN TIME: " + hms)
