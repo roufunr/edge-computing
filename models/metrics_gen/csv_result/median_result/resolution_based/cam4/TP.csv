@@ -1,0 +1,11 @@
+TP- resolution/model,yolov5,ssd,retinanet
+streamid_1/quality_1,0.0,1.0,0.0
+streamid_1/quality_2,0.25,0.0,1.0
+streamid_1/quality_3,0.0,0.0,0.0
+streamid_1/quality_4,0.5,0.5,0.0
+streamid_1/quality_5,1.0,1.0,0.5
+streamid_0/quality_1,2.0,3.0,1.0
+streamid_0/quality_2,1.0,1.0,2.0
+streamid_0/quality_3,1.5,1.0,2.0
+streamid_0/quality_4,2.0,2.5,1.0
+streamid_0/quality_5,2.0,2.0,1.0

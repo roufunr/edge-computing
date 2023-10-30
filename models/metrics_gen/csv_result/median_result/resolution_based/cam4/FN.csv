@@ -1,0 +1,11 @@
+FN- resolution/model,yolov5,ssd,retinanet
+streamid_1/quality_1,3.0,2.0,2.5
+streamid_1/quality_2,1.5,2.0,1.0
+streamid_1/quality_3,1.0,1.0,1.0
+streamid_1/quality_4,1.25,1.0,2.25
+streamid_1/quality_5,1.0,1.0,1.5
+streamid_0/quality_1,2.0,1.5,3.0
+streamid_0/quality_2,2.0,2.0,1.0
+streamid_0/quality_3,1.0,1.0,0.0
+streamid_0/quality_4,2.0,1.0,2.5
+streamid_0/quality_5,1.0,1.0,2.0
