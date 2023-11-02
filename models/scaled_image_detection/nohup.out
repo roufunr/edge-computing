@@ -1,0 +1,78 @@
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained_backbone' is deprecated since 0.13 and may be removed in the future, please use 'weights_backbone' instead.
+  warnings.warn(
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights_backbone' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights_backbone=None`.
+  warnings.warn(msg)
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/common.py:13: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/efficientnet.py:17: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Detection/SSD/ssd/entrypoints.py:163: ResourceWarning: unclosed file <_io.TextIOWrapper name='category_names.txt' mode='r' encoding='UTF-8'>
+  class_names = open("category_names.txt").readlines()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Using cache found in /home/ubuntu/.cache/torch/hub/ultralytics_yolov5_master
+YOLOv5 🚀 2023-11-1 Python-3.10.12 torch-2.0.1 CUDA:0 (Tesla V100-SXM2-16GB, 16151MiB)
+
+Fusing layers... 
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients
+Adding AutoShape... 
+WARNING ⚠️ NMS time limit 0.550s exceeded
+Traceback (most recent call last):
+  File "/home/ubuntu/edge-computing/models/scaled_image_detection/run.py", line 307, in <module>
+    exp_data = run_experiment(labeled_data, i)
+  File "/home/ubuntu/edge-computing/models/scaled_image_detection/run.py", line 300, in run_experiment
+    logging.info(str(exp_id) + " :::: " + " PROGRESS ==> " + str(progress) + "%" + " " + "ELAPSED_TIME ==> " + elapsed_hms)
+TypeError: can only concatenate str (not "tuple") to str
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained_backbone' is deprecated since 0.13 and may be removed in the future, please use 'weights_backbone' instead.
+  warnings.warn(
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights_backbone' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights_backbone=None`.
+  warnings.warn(msg)
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/common.py:13: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/efficientnet.py:17: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Detection/SSD/ssd/entrypoints.py:163: ResourceWarning: unclosed file <_io.TextIOWrapper name='category_names.txt' mode='r' encoding='UTF-8'>
+  class_names = open("category_names.txt").readlines()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Using cache found in /home/ubuntu/.cache/torch/hub/ultralytics_yolov5_master
+YOLOv5 🚀 2023-11-1 Python-3.10.12 torch-2.0.1 CUDA:0 (Tesla V100-SXM2-16GB, 16151MiB)
+
+Fusing layers... 
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients
+Adding AutoShape... 
+WARNING ⚠️ NMS time limit 0.550s exceeded
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained_backbone' is deprecated since 0.13 and may be removed in the future, please use 'weights_backbone' instead.
+  warnings.warn(
+/opt/conda/envs/pytorch/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights_backbone' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights_backbone=None`.
+  warnings.warn(msg)
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/common.py:13: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/efficientnet.py:17: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Detection/SSD/ssd/entrypoints.py:163: ResourceWarning: unclosed file <_io.TextIOWrapper name='category_names.txt' mode='r' encoding='UTF-8'>
+  class_names = open("category_names.txt").readlines()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Using cache found in /home/ubuntu/.cache/torch/hub/ultralytics_yolov5_master
+YOLOv5 🚀 2023-11-1 Python-3.10.12 torch-2.0.1 CUDA:0 (Tesla V100-SXM2-16GB, 16151MiB)
+
+Fusing layers... 
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients
+Adding AutoShape... 
+WARNING ⚠️ NMS time limit 0.550s exceeded
