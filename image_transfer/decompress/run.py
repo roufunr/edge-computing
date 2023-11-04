@@ -4,7 +4,7 @@ import json
 import cv2
 import time
 
-data_base_path = "/home/rouf-linux/data"
+data_base_path = "/home/ubuntu/data"
 compressed_image_base_path = data_base_path + "/compressed"
 decompressed_image_base_path = data_base_path + "/decompressed"
 os.makedirs(decompressed_image_base_path, exist_ok=True)
@@ -59,7 +59,7 @@ def run_experiment(exp_id):
                         image_path = compressed_image_base_path + "/" + ip_method + "/" + str(scaling_factor) + "/" + resolution + "/" + str(frame) + "/" + str(frame_start_id + i) + ".bmp"
                         upscaled_cv2_image, elapsed_time = upscale(image_path, scaling_factor, interpolation_methods[ip_method])
                         elapsed_time_sum += elapsed_time
-                        save_processed_image(upscaled_cv2_image, decompressed_image_base_path + "/" + str(exp_id) + "/" + ip_method + "/" + str(scaling_factor) + "/" + resolution + "/" + str(frame), str(frame_start_id + i) + ".bmp")
+                        # save_processed_image(upscaled_cv2_image, decompressed_image_base_path + "/" + str(exp_id) + "/" + ip_method + "/" + str(scaling_factor) + "/" + resolution + "/" + str(frame), str(frame_start_id + i) + ".bmp")
                     key = str(exp_id) + "/" + ip_method + "/" + str(scaling_factor) + "/" + resolution + "/" + str(frame)
                     print(key + "   DONE!")
                     exp_dict[key] = elapsed_time_sum     
