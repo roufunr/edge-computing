@@ -57,26 +57,26 @@ data = load_json("/Users/abdurrouf/edge-computing/image_transfer/report_generati
 #transfer
 #orignal
 rows = []
-header = ["resolution/frame"]
+header = ["orignal"]
 header += frames
 rows.append(header)
 for resolution in resolutions:
     row = [resolution]
     for frame in frames:
-        row.append(round(data["transfer"]["original"][resolution + "/" + str(frame)]["response_time"], 5))
+        row.append(round(data["transfer"]["original"][resolution + "/" + str(frame)]["response_time"], 3))
     rows.append(row)
 write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "transfer" + "/" + "original", "original.csv")
 #compressed
 for ip_method in ip_methods:
     for scaling_factor in scaling_factors:
         rows = []
-        header = ["resolution/frame"]
+        header = [ip_methods_name_mapper[ip_method] + "_" + str(scaling_factor)]
         header += frames
         rows.append(header)
         for resolution in resolutions:
             row = [resolution]
             for frame in frames:
-                row.append(round(data["transfer"]["compressed"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)]["response_time"], 5))
+                row.append(round(data["transfer"]["compressed"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)]["response_time"], 3))
             rows.append(row)
         write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "transfer" + "/" + "compressed" + "/" + ip_method, str(scaling_factor) + ".csv")
 ###################
@@ -84,13 +84,13 @@ for ip_method in ip_methods:
 for ip_method in ip_methods:
     for scaling_factor in scaling_factors:
         rows = []
-        header = ["resolution/frame"]
+        header = [ip_methods_name_mapper[ip_method] + "_" + str(scaling_factor)]
         header += frames
         rows.append(header)
         for resolution in resolutions:
             row = [resolution]
             for frame in frames:
-                row.append(round(data["compression"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)], 5))
+                row.append(round(data["compression"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)], 3))
             rows.append(row)
         write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "compression" + "/" + ip_method, str(scaling_factor) + ".csv")
 
@@ -99,13 +99,13 @@ for ip_method in ip_methods:
 for ip_method in ip_methods:
     for scaling_factor in scaling_factors:
         rows = []
-        header = ["resolution/frame"]
+        header = [ip_methods_name_mapper[ip_method] + "_" + str(scaling_factor)]
         header += frames
         rows.append(header)
         for resolution in resolutions:
             row = [resolution]
             for frame in frames:
-                row.append(round(data["decompression"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)], 5))
+                row.append(round(data["decompression"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)], 3))
             rows.append(row)
         write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "decompression" + "/" + ip_method, str(scaling_factor) + ".csv")
 
