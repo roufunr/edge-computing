@@ -3,6 +3,18 @@ import sys
 import json
 import cv2
 import time
+import logging
+
+# Configure the logger
+logging.basicConfig(
+    level=logging.DEBUG,  # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    filename='my_log_file.log',  # Specify the log file name
+    filemode='w'  # Use 'w' to overwrite the log file on each run, or 'a' to append to it
+)
+
+# Create a logger instance
+logger = logging.getLogger(__name__)
 
 data_base_path = "/home/ubuntu/data"
 compressed_image_base_path = data_base_path + "/compressed"
@@ -11,7 +23,7 @@ os.makedirs(decompressed_image_base_path, exist_ok=True)
 
 resolutions = ['160x90', '160x100', '160x120', '320x180', '320x200', '320x240', '480x270', '480x300', '480x360', '640x360', '640x400', '640x480', '800x450', '800x500', '800x600', '1024x576', '1024x640', '1024x768', '1280x720', '1280x800', '1280x960', '1440x900', '1440x1080', '1920x1080']
 frames = [1, 2, 4, 8, 16, 32]
-total_experiment = 1
+total_experiment = 11
 scaling_factors = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
 interpolation_methods = {
     'INTER_NEAREST': cv2.INTER_NEAREST,
@@ -61,9 +73,10 @@ def run_experiment(exp_id):
                         elapsed_time_sum += elapsed_time
                         # save_processed_image(upscaled_cv2_image, decompressed_image_base_path + "/" + str(exp_id) + "/" + ip_method + "/" + str(scaling_factor) + "/" + resolution + "/" + str(frame), str(frame_start_id + i) + ".bmp")
                     key = str(exp_id) + "/" + ip_method + "/" + str(scaling_factor) + "/" + resolution + "/" + str(frame)
-                    print(key + "   DONE!")
-                    exp_dict[key] = elapsed_time_sum     
-    save_data_as_json(exp_dict, "/home/rouf-linux/edge-computing/image_transfer/decompress/result" + "/" + str(exp_id) + ".json")
+                    logger.info(key + "   DONE!")
+                    exp_dict[key] = elapsed_time_sum
+    
+    save_data_as_json(exp_dict, "/home/ubuntu/edge-computing/image_transfer/decompress/result" + "/" + str(exp_id) + ".json")
 
 for exp_id in range(total_experiment):
     run_experiment(exp_id)
