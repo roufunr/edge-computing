@@ -4,7 +4,7 @@ import time
 from datetime import datetime  # Import datetime module
 
 # Specify the URL of your Flask server
-ip_addr = '44.203.150.47'
+ip_addr = '3.214.216.88'
 upload_url = f"http://{ip_addr}:5000/upload"  # Use an f-string
 
 data_path = "/home/rouf-linux/data"
@@ -14,7 +14,7 @@ result_path = "/home/rouf-linux/edge-computing/image_transfer/client/result"
 
 resolutions = ['160x90', '160x100', '160x120', '320x180', '320x200', '320x240', '480x270', '480x300', '480x360', '640x360', '640x400', '640x480', '800x450', '800x500', '800x600', '1024x576', '1024x640', '1024x768', '1280x720', '1280x800', '1280x960', '1440x900', '1440x1080', '1920x1080']
 frames = [1, 2, 4, 8, 16, 32]
-total_experiment = 11
+total_experiment = 1
 scaling_factors = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
 ip_methods = ['INTER_NEAREST', 'INTER_LINEAR', 'INTER_CUBIC', 'INTER_AREA', 'INTER_LANCZOS4']
 ip_methods_name_mapper = {
@@ -111,11 +111,11 @@ def transfer_original_image(exp_id):
 
 for i in range(total_experiment): 
     compressed_result = transfer_compressed_image(i)
-    origianl_result = transfer_original_image(i)
-    result = {
-        "compressed": compressed_result,
-        "original": origianl_result
-    }
+    # origianl_result = transfer_original_image(i)
+    # result = {
+    #     "compressed": compressed_result,
+    #     "original": origianl_result
+    # }
 
-    save_data_as_json(result, "/home/rouf-linux/edge-computing/image_transfer/client/result/" + str(i) + ".json")
+    # save_data_as_json(result, "/home/rouf-linux/edge-computing/image_transfer/client/result/" + str(i) + ".json")
 
