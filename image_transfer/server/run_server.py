@@ -2,11 +2,15 @@ from flask import Flask, request, jsonify
 import os
 from time import time
 from datetime import datetime  # Import datetime module
+import logging
+logging.basicConfig(filename='server.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Create a logger
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 
 # Specify the upload directory
-upload_path = "/home/ubuntu/images"
+upload_path = "/home/ubuntu/data"
 
 # Define allowed extensions for images
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'bmp'}
@@ -29,10 +33,10 @@ def upload_file():
 
     disk_write_start_time = time() * 1000
     for file in files:
-        exact_file_save_path = upload_path + "/" + images_path + file.filename  # Use os.path.join
+        exact_file_save_path = upload_path + "/" + images_path + file.filename  
         file.save(exact_file_save_path)
     disk_write_end_time = time() * 1000
-    transfer_time = transfer_end_time - float(request.form['transfer_start_time'])  # Corrected request.form usage
+    transfer_time = transfer_end_time - float(request.form['transfer_start_time'])
     disk_write_time = disk_write_end_time - disk_write_start_time
 
     return jsonify({'transfer_time': transfer_time, 'disk_write_time': disk_write_time}), 200
