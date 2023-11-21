@@ -1,8 +1,8 @@
 import os
 import json
 
-raw_results_base_path = "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results"
-parts = ["transfer_n_cal"]
+raw_results_base_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results"
+parts = ["compression", "decompression", "transfer"]
 transfer_image_type = ["original", "compressed"]
 transfer_time_type = ["transfer_time", "disk_write_time", "response_time"]
 resolutions = ['160x90', '160x100', '160x120', '320x180', '320x200', '320x240', '480x270', '480x300', '480x360', '640x360', '640x400', '640x480', '800x450', '800x500', '800x600', '1024x576', '1024x640', '1024x768', '1280x720', '1280x800', '1280x960', '1440x900', '1440x1080', '1920x1080']
@@ -139,13 +139,13 @@ def calculate_median(v_data):
 
 
 data = load_data()
-save_data_as_json(data, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results/data.json")
+save_data_as_json(data, "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results/data.json")
 v_data = rearrange_data_vertically(data)
-save_data_as_json(v_data, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results/v_data.json")
+save_data_as_json(v_data, "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results/v_data.json")
 avg_data = calculate_average(v_data)
-save_data_as_json(avg_data, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results/avg_data.json")
+save_data_as_json(avg_data, "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results/avg_data.json")
 median_data = calculate_median(v_data)
-save_data_as_json(median_data, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results/median_data.json")
+save_data_as_json(median_data, "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results/median_data.json")
 
         
 

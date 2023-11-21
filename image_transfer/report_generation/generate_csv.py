@@ -2,7 +2,7 @@ import csv
 import os
 import json
 
-raw_results_base_path = "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results"
+raw_results_base_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results"
 parts = ["compression", "decompression", "transfer"]
 transfer_image_type = ["original", "compressed"]
 transfer_time_type = ["transfer_time", "disk_write_time", "response_time"]
@@ -52,7 +52,7 @@ def load_json(json_path):
         json_data = json.load(json_file)
     return json_data
 
-data = load_json("/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results/median_data.json")
+data = load_json("/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results/median_data.json")
 
 #transfer
 #orignal
@@ -65,7 +65,7 @@ for resolution in resolutions:
     for frame in frames:
         row.append(round(data["transfer"]["original"][resolution + "/" + str(frame)]["response_time"], 3))
     rows.append(row)
-write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "transfer" + "/" + "original", "original.csv")
+write_2d_list_to_csv(rows, "/home/rouf-linux/edge-computing/image_transfer/report_generation/csv" + "/" + "transfer" + "/" + "original", "original.csv")
 #compressed
 for ip_method in ip_methods:
     for scaling_factor in scaling_factors:
@@ -78,7 +78,7 @@ for ip_method in ip_methods:
             for frame in frames:
                 row.append(round(data["transfer"]["compressed"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)]["response_time"], 3))
             rows.append(row)
-        write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "transfer" + "/" + "compressed" + "/" + ip_method, str(scaling_factor) + ".csv")
+        write_2d_list_to_csv(rows, "/home/rouf-linux/edge-computing/image_transfer/report_generation/csv" + "/" + "transfer" + "/" + "compressed" + "/" + ip_method, str(scaling_factor) + ".csv")
 ###################
 #compression
 for ip_method in ip_methods:
@@ -92,7 +92,7 @@ for ip_method in ip_methods:
             for frame in frames:
                 row.append(round(data["compression"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)], 3))
             rows.append(row)
-        write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "compression" + "/" + ip_method, str(scaling_factor) + ".csv")
+        write_2d_list_to_csv(rows, "/home/rouf-linux/edge-computing/image_transfer/report_generation/csv" + "/" + "compression" + "/" + ip_method, str(scaling_factor) + ".csv")
 
 
 #decompression
@@ -107,7 +107,7 @@ for ip_method in ip_methods:
             for frame in frames:
                 row.append(round(data["decompression"][ip_method+"/" + str(scaling_factor)  + "/" + resolution + "/" + str(frame)], 3))
             rows.append(row)
-        write_2d_list_to_csv(rows, "/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv" + "/" + "decompression" + "/" + ip_method, str(scaling_factor) + ".csv")
+        write_2d_list_to_csv(rows, "/home/rouf-linux/edge-computing/image_transfer/report_generation/csv" + "/" + "decompression" + "/" + ip_method, str(scaling_factor) + ".csv")
 
 
 

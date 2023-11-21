@@ -1,6 +1,6 @@
 import pandas as pd
 
-raw_results_base_path = "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results"
+raw_results_base_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results"
 parts = ["compression", "decompression", "transfer"]
 transfer_image_type = ["original", "compressed"]
 transfer_time_type = ["transfer_time", "disk_write_time", "response_time"]
@@ -41,22 +41,22 @@ def merge_csv_files_with_empty_column(csv_file_paths, output_file_path):
 csv_list = []
 for ip_method in ip_methods:
     for scaling_factor in scaling_factors:
-        csv_list.append("/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv/transfer/compressed" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
-output_csv_path = "/Users/abdurrouf/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "compressed_image_transfer.csv"
+        csv_list.append("/home/rouf-linux/edge-computing/image_transfer/report_generation/csv/transfer/compressed" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
+output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "compressed_image_transfer.csv"
 merge_csv_files_with_empty_column(csv_list, output_csv_path)
 
 # compression
 csv_list = []
 for ip_method in ip_methods:
     for scaling_factor in scaling_factors:
-        csv_list.append("/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv/compression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
-output_csv_path = "/Users/abdurrouf/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_compression_time.csv"
+        csv_list.append("/home/rouf-linux/edge-computing/image_transfer/report_generation/csv/compression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
+output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_compression_time.csv"
 merge_csv_files_with_empty_column(csv_list, output_csv_path)
 
 # decompression
 csv_list = []
 for ip_method in ip_methods:
     for scaling_factor in scaling_factors:
-        csv_list.append("/Users/abdurrouf/edge-computing/image_transfer/report_generation/csv/decompression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
-output_csv_path = "/Users/abdurrouf/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_decompression_time.csv"
+        csv_list.append("/home/rouf-linux/edge-computing/image_transfer/report_generation/csv/decompression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
+output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_decompression_time.csv"
 merge_csv_files_with_empty_column(csv_list, output_csv_path)

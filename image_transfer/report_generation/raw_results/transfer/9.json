@@ -36002,722 +36002,722 @@
         }
     },
     "original": {
-        "/160x90/1": {
+        "160x90/1": {
             "transfer_time": 65.220458984375,
             "disk_write_time": 0.1796875,
             "response_time": 146.020751953125
         },
-        "/160x90/2": {
+        "160x90/2": {
             "transfer_time": 64.688720703125,
             "disk_write_time": 0.284423828125,
             "response_time": 153.83740234375
         },
-        "/160x90/4": {
+        "160x90/4": {
             "transfer_time": 65.854736328125,
             "disk_write_time": 0.43212890625,
             "response_time": 228.838623046875
         },
-        "/160x90/8": {
+        "160x90/8": {
             "transfer_time": 63.894287109375,
             "disk_write_time": 0.786376953125,
             "response_time": 298.057861328125
         },
-        "/160x90/16": {
+        "160x90/16": {
             "transfer_time": 64.192626953125,
             "disk_write_time": 1.48779296875,
             "response_time": 364.327880859375
         },
-        "/160x90/32": {
+        "160x90/32": {
             "transfer_time": 66.061767578125,
             "disk_write_time": 3.616455078125,
             "response_time": 397.66162109375
         },
-        "/160x100/1": {
+        "160x100/1": {
             "transfer_time": 63.471435546875,
             "disk_write_time": 0.1689453125,
             "response_time": 142.8046875
         },
-        "/160x100/2": {
+        "160x100/2": {
             "transfer_time": 63.859375,
             "disk_write_time": 0.25244140625,
             "response_time": 146.392578125
         },
-        "/160x100/4": {
+        "160x100/4": {
             "transfer_time": 64.89453125,
             "disk_write_time": 0.458251953125,
             "response_time": 229.82958984375
         },
-        "/160x100/8": {
+        "160x100/8": {
             "transfer_time": 65.55126953125,
             "disk_write_time": 0.818603515625,
             "response_time": 307.84521484375
         },
-        "/160x100/16": {
+        "160x100/16": {
             "transfer_time": 65.5966796875,
             "disk_write_time": 2.980224609375,
             "response_time": 361.937255859375
         },
-        "/160x100/32": {
+        "160x100/32": {
             "transfer_time": 65.69873046875,
             "disk_write_time": 3.042724609375,
             "response_time": 479.549560546875
         },
-        "/160x120/1": {
+        "160x120/1": {
             "transfer_time": 64.817138671875,
             "disk_write_time": 0.171630859375,
             "response_time": 146.525634765625
         },
-        "/160x120/2": {
+        "160x120/2": {
             "transfer_time": 63.450439453125,
             "disk_write_time": 0.30712890625,
             "response_time": 185.23388671875
         },
-        "/160x120/4": {
+        "160x120/4": {
             "transfer_time": 62.964111328125,
             "disk_write_time": 0.500244140625,
             "response_time": 243.27001953125
         },
-        "/160x120/8": {
+        "160x120/8": {
             "transfer_time": 62.508056640625,
             "disk_write_time": 0.910888671875,
             "response_time": 263.85986328125
         },
-        "/160x120/16": {
+        "160x120/16": {
             "transfer_time": 64.132568359375,
             "disk_write_time": 1.7958984375,
             "response_time": 314.114013671875
         },
-        "/160x120/32": {
+        "160x120/32": {
             "transfer_time": 64.560791015625,
             "disk_write_time": 3.3701171875,
             "response_time": 532.8291015625
         },
-        "/320x180/1": {
+        "320x180/1": {
             "transfer_time": 63.662109375,
             "disk_write_time": 0.291259765625,
             "response_time": 210.86474609375
         },
-        "/320x180/2": {
+        "320x180/2": {
             "transfer_time": 63.048828125,
             "disk_write_time": 0.512451171875,
             "response_time": 297.1728515625
         },
-        "/320x180/4": {
+        "320x180/4": {
             "transfer_time": 62.275146484375,
             "disk_write_time": 1.000732421875,
             "response_time": 278.382080078125
         },
-        "/320x180/8": {
+        "320x180/8": {
             "transfer_time": 63.93701171875,
             "disk_write_time": 1.8955078125,
             "response_time": 535.75048828125
         },
-        "/320x180/16": {
+        "320x180/16": {
             "transfer_time": 64.737548828125,
             "disk_write_time": 3.562255859375,
             "response_time": 513.07958984375
         },
-        "/320x180/32": {
+        "320x180/32": {
             "transfer_time": 66.884765625,
             "disk_write_time": 6.6875,
             "response_time": 414.141357421875
         },
-        "/320x200/1": {
+        "320x200/1": {
             "transfer_time": 63.2783203125,
             "disk_write_time": 0.30859375,
             "response_time": 213.93408203125
         },
-        "/320x200/2": {
+        "320x200/2": {
             "transfer_time": 63.257080078125,
             "disk_write_time": 0.5556640625,
             "response_time": 294.77685546875
         },
-        "/320x200/4": {
+        "320x200/4": {
             "transfer_time": 63.796142578125,
             "disk_write_time": 2.50244140625,
             "response_time": 350.497314453125
         },
-        "/320x200/8": {
+        "320x200/8": {
             "transfer_time": 65.23193359375,
             "disk_write_time": 1.942138671875,
             "response_time": 568.8681640625
         },
-        "/320x200/16": {
+        "320x200/16": {
             "transfer_time": 65.587890625,
             "disk_write_time": 3.883544921875,
             "response_time": 718.4052734375
         },
-        "/320x200/32": {
+        "320x200/32": {
             "transfer_time": 66.89306640625,
             "disk_write_time": 7.75390625,
             "response_time": 860.9599609375
         },
-        "/320x240/1": {
+        "320x240/1": {
             "transfer_time": 63.59814453125,
             "disk_write_time": 0.32666015625,
             "response_time": 232.991943359375
         },
-        "/320x240/2": {
+        "320x240/2": {
             "transfer_time": 62.371826171875,
             "disk_write_time": 0.65576171875,
             "response_time": 275.456787109375
         },
-        "/320x240/4": {
+        "320x240/4": {
             "transfer_time": 63.703125,
             "disk_write_time": 1.205322265625,
             "response_time": 391.913330078125
         },
-        "/320x240/8": {
+        "320x240/8": {
             "transfer_time": 65.698486328125,
             "disk_write_time": 2.244873046875,
             "response_time": 415.88037109375
         },
-        "/320x240/16": {
+        "320x240/16": {
             "transfer_time": 65.6904296875,
             "disk_write_time": 4.53466796875,
             "response_time": 782.373046875
         },
-        "/320x240/32": {
+        "320x240/32": {
             "transfer_time": 65.2080078125,
             "disk_write_time": 9.258056640625,
             "response_time": 716.678955078125
         },
-        "/480x270/1": {
+        "480x270/1": {
             "transfer_time": 64.720703125,
             "disk_write_time": 0.556396484375,
             "response_time": 294.573486328125
         },
-        "/480x270/2": {
+        "480x270/2": {
             "transfer_time": 64.680908203125,
             "disk_write_time": 1.001953125,
             "response_time": 428.127197265625
         },
-        "/480x270/4": {
+        "480x270/4": {
             "transfer_time": 63.7451171875,
             "disk_write_time": 1.91943359375,
             "response_time": 504.142578125
         },
-        "/480x270/8": {
+        "480x270/8": {
             "transfer_time": 65.828857421875,
             "disk_write_time": 3.739990234375,
             "response_time": 824.74072265625
         },
-        "/480x270/16": {
+        "480x270/16": {
             "transfer_time": 64.656005859375,
             "disk_write_time": 9.50439453125,
             "response_time": 983.99755859375
         },
-        "/480x270/32": {
+        "480x270/32": {
             "transfer_time": 69.0068359375,
             "disk_write_time": 14.22119140625,
             "response_time": 623.776611328125
         },
-        "/480x300/1": {
+        "480x300/1": {
             "transfer_time": 64.638427734375,
             "disk_write_time": 0.563720703125,
             "response_time": 261.33837890625
         },
-        "/480x300/2": {
+        "480x300/2": {
             "transfer_time": 70.09912109375,
             "disk_write_time": 1.029541015625,
             "response_time": 326.97900390625
         },
-        "/480x300/4": {
+        "480x300/4": {
             "transfer_time": 65.027587890625,
             "disk_write_time": 2.04833984375,
             "response_time": 528.401611328125
         },
-        "/480x300/8": {
+        "480x300/8": {
             "transfer_time": 64.2529296875,
             "disk_write_time": 5.662841796875,
             "response_time": 613.689697265625
         },
-        "/480x300/16": {
+        "480x300/16": {
             "transfer_time": 65.038330078125,
             "disk_write_time": 8.113037109375,
             "response_time": 926.240234375
         },
-        "/480x300/32": {
+        "480x300/32": {
             "transfer_time": 66.800048828125,
             "disk_write_time": 15.83203125,
             "response_time": 1217.42724609375
         },
-        "/480x360/1": {
+        "480x360/1": {
             "transfer_time": 63.545654296875,
             "disk_write_time": 0.68896484375,
             "response_time": 301.117431640625
         },
-        "/480x360/2": {
+        "480x360/2": {
             "transfer_time": 63.285400390625,
             "disk_write_time": 1.409423828125,
             "response_time": 347.2392578125
         },
-        "/480x360/4": {
+        "480x360/4": {
             "transfer_time": 64.1279296875,
             "disk_write_time": 2.906982421875,
             "response_time": 539.102294921875
         },
-        "/480x360/8": {
+        "480x360/8": {
             "transfer_time": 64.169189453125,
             "disk_write_time": 5.940673828125,
             "response_time": 867.260009765625
         },
-        "/480x360/16": {
+        "480x360/16": {
             "transfer_time": 66.326416015625,
             "disk_write_time": 11.347900390625,
             "response_time": 1212.106689453125
         },
-        "/480x360/32": {
+        "480x360/32": {
             "transfer_time": 68.08740234375,
             "disk_write_time": 22.810791015625,
             "response_time": 1831.310546875
         },
-        "/640x360/1": {
+        "640x360/1": {
             "transfer_time": 63.37646484375,
             "disk_write_time": 0.9384765625,
             "response_time": 419.152587890625
         },
-        "/640x360/2": {
+        "640x360/2": {
             "transfer_time": 62.158447265625,
             "disk_write_time": 1.838134765625,
             "response_time": 459.621826171875
         },
-        "/640x360/4": {
+        "640x360/4": {
             "transfer_time": 64.354736328125,
             "disk_write_time": 3.56640625,
             "response_time": 425.982421875
         },
-        "/640x360/8": {
+        "640x360/8": {
             "transfer_time": 65.684814453125,
             "disk_write_time": 6.998779296875,
             "response_time": 504.697998046875
         },
-        "/640x360/16": {
+        "640x360/16": {
             "transfer_time": 66.4072265625,
             "disk_write_time": 15.280517578125,
             "response_time": 1695.771484375
         },
-        "/640x360/32": {
+        "640x360/32": {
             "transfer_time": 107.5771484375,
             "disk_write_time": 28.759521484375,
             "response_time": 1674.7890625
         },
-        "/640x400/1": {
+        "640x400/1": {
             "transfer_time": 76.389404296875,
             "disk_write_time": 0.986572265625,
             "response_time": 507.011962890625
         },
-        "/640x400/2": {
+        "640x400/2": {
             "transfer_time": 66.99560546875,
             "disk_write_time": 2.154541015625,
             "response_time": 657.843994140625
         },
-        "/640x400/4": {
+        "640x400/4": {
             "transfer_time": 80.286376953125,
             "disk_write_time": 4.113037109375,
             "response_time": 1395.890625
         },
-        "/640x400/8": {
+        "640x400/8": {
             "transfer_time": 87.669189453125,
             "disk_write_time": 7.927490234375,
             "response_time": 1019.4619140625
         },
-        "/640x400/16": {
+        "640x400/16": {
             "transfer_time": 99.79345703125,
             "disk_write_time": 24.943115234375,
             "response_time": 1333.0986328125
         },
-        "/640x400/32": {
+        "640x400/32": {
             "transfer_time": 125.80419921875,
             "disk_write_time": 35.404052734375,
             "response_time": 964.3486328125
         },
-        "/640x480/1": {
+        "640x480/1": {
             "transfer_time": 65.413330078125,
             "disk_write_time": 1.239501953125,
             "response_time": 467.470947265625
         },
-        "/640x480/2": {
+        "640x480/2": {
             "transfer_time": 67.51708984375,
             "disk_write_time": 2.37646484375,
             "response_time": 337.8154296875
         },
-        "/640x480/4": {
+        "640x480/4": {
             "transfer_time": 70.697021484375,
             "disk_write_time": 4.806884765625,
             "response_time": 382.00146484375
         },
-        "/640x480/8": {
+        "640x480/8": {
             "transfer_time": 79.57861328125,
             "disk_write_time": 9.567138671875,
             "response_time": 604.0400390625
         },
-        "/640x480/16": {
+        "640x480/16": {
             "transfer_time": 99.053955078125,
             "disk_write_time": 22.027099609375,
             "response_time": 668.223876953125
         },
-        "/640x480/32": {
+        "640x480/32": {
             "transfer_time": 75.0791015625,
             "disk_write_time": 61.340576171875,
             "response_time": 1801.1611328125
         },
-        "/800x450/1": {
+        "800x450/1": {
             "transfer_time": 64.613037109375,
             "disk_write_time": 1.49658203125,
             "response_time": 328.775146484375
         },
-        "/800x450/2": {
+        "800x450/2": {
             "transfer_time": 64.64111328125,
             "disk_write_time": 2.807861328125,
             "response_time": 683.48681640625
         },
-        "/800x450/4": {
+        "800x450/4": {
             "transfer_time": 65.503662109375,
             "disk_write_time": 5.89111328125,
             "response_time": 785.73974609375
         },
-        "/800x450/8": {
+        "800x450/8": {
             "transfer_time": 68.3203125,
             "disk_write_time": 11.877685546875,
             "response_time": 1190.5810546875
         },
-        "/800x450/16": {
+        "800x450/16": {
             "transfer_time": 71.1884765625,
             "disk_write_time": 29.27294921875,
             "response_time": 2074.798095703125
         },
-        "/800x450/32": {
+        "800x450/32": {
             "transfer_time": 78.174560546875,
             "disk_write_time": 60.244384765625,
             "response_time": 2418.728759765625
         },
-        "/800x500/1": {
+        "800x500/1": {
             "transfer_time": 63.619873046875,
             "disk_write_time": 1.683837890625,
             "response_time": 525.447998046875
         },
-        "/800x500/2": {
+        "800x500/2": {
             "transfer_time": 64.313720703125,
             "disk_write_time": 3.02294921875,
             "response_time": 484.5830078125
         },
-        "/800x500/4": {
+        "800x500/4": {
             "transfer_time": 65.8544921875,
             "disk_write_time": 6.226806640625,
             "response_time": 1179.6943359375
         },
-        "/800x500/8": {
+        "800x500/8": {
             "transfer_time": 66.209228515625,
             "disk_write_time": 12.287841796875,
             "response_time": 610.69287109375
         },
-        "/800x500/16": {
+        "800x500/16": {
             "transfer_time": 71.904296875,
             "disk_write_time": 27.12744140625,
             "response_time": 1695.828369140625
         },
-        "/800x500/32": {
+        "800x500/32": {
             "transfer_time": 80.20361328125,
             "disk_write_time": 67.226318359375,
             "response_time": 2156.1455078125
         },
-        "/800x600/1": {
+        "800x600/1": {
             "transfer_time": 63.64013671875,
             "disk_write_time": 1.869873046875,
             "response_time": 598.126220703125
         },
-        "/800x600/2": {
+        "800x600/2": {
             "transfer_time": 65.91064453125,
             "disk_write_time": 3.660400390625,
             "response_time": 377.24267578125
         },
-        "/800x600/4": {
+        "800x600/4": {
             "transfer_time": 65.22119140625,
             "disk_write_time": 7.51416015625,
             "response_time": 967.188232421875
         },
-        "/800x600/8": {
+        "800x600/8": {
             "transfer_time": 67.46630859375,
             "disk_write_time": 15.5205078125,
             "response_time": 832.091552734375
         },
-        "/800x600/16": {
+        "800x600/16": {
             "transfer_time": 74.8369140625,
             "disk_write_time": 33.71630859375,
             "response_time": 821.796630859375
         },
-        "/800x600/32": {
+        "800x600/32": {
             "transfer_time": 111.129150390625,
             "disk_write_time": 78.232666015625,
             "response_time": 1406.733642578125
         },
-        "/1024x576/1": {
+        "1024x576/1": {
             "transfer_time": 75.9873046875,
             "disk_write_time": 2.237548828125,
             "response_time": 609.164306640625
         },
-        "/1024x576/2": {
+        "1024x576/2": {
             "transfer_time": 80.229248046875,
             "disk_write_time": 4.63525390625,
             "response_time": 1052.77392578125
         },
-        "/1024x576/4": {
+        "1024x576/4": {
             "transfer_time": 83.6181640625,
             "disk_write_time": 11.1005859375,
             "response_time": 474.529296875
         },
-        "/1024x576/8": {
+        "1024x576/8": {
             "transfer_time": 69.633544921875,
             "disk_write_time": 18.017578125,
             "response_time": 1229.36376953125
         },
-        "/1024x576/16": {
+        "1024x576/16": {
             "transfer_time": 93.90625,
             "disk_write_time": 55.8115234375,
             "response_time": 964.76806640625
         },
-        "/1024x576/32": {
+        "1024x576/32": {
             "transfer_time": 115.874267578125,
             "disk_write_time": 93.895263671875,
             "response_time": 2443.86767578125
         },
-        "/1024x640/1": {
+        "1024x640/1": {
             "transfer_time": 64.527099609375,
             "disk_write_time": 2.583740234375,
             "response_time": 591.80126953125
         },
-        "/1024x640/2": {
+        "1024x640/2": {
             "transfer_time": 64.018310546875,
             "disk_write_time": 5.025146484375,
             "response_time": 376.85205078125
         },
-        "/1024x640/4": {
+        "1024x640/4": {
             "transfer_time": 81.4501953125,
             "disk_write_time": 10.48193359375,
             "response_time": 504.274658203125
         },
-        "/1024x640/8": {
+        "1024x640/8": {
             "transfer_time": 90.54541015625,
             "disk_write_time": 27.496826171875,
             "response_time": 1539.324462890625
         },
-        "/1024x640/16": {
+        "1024x640/16": {
             "transfer_time": 101.002197265625,
             "disk_write_time": 57.219970703125,
             "response_time": 1991.6728515625
         },
-        "/1024x640/32": {
+        "1024x640/32": {
             "transfer_time": 107.783447265625,
             "disk_write_time": 113.57080078125,
             "response_time": 2827.11474609375
         },
-        "/1024x768/1": {
+        "1024x768/1": {
             "transfer_time": 77.942138671875,
             "disk_write_time": 2.927001953125,
             "response_time": 793.54736328125
         },
-        "/1024x768/2": {
+        "1024x768/2": {
             "transfer_time": 82.39892578125,
             "disk_write_time": 5.923095703125,
             "response_time": 979.2607421875
         },
-        "/1024x768/4": {
+        "1024x768/4": {
             "transfer_time": 104.473388671875,
             "disk_write_time": 13.21044921875,
             "response_time": 1098.500244140625
         },
-        "/1024x768/8": {
+        "1024x768/8": {
             "transfer_time": 118.148193359375,
             "disk_write_time": 23.952392578125,
             "response_time": 1853.411376953125
         },
-        "/1024x768/16": {
+        "1024x768/16": {
             "transfer_time": 101.27294921875,
             "disk_write_time": 54.80712890625,
             "response_time": 2065.649658203125
         },
-        "/1024x768/32": {
+        "1024x768/32": {
             "transfer_time": 136.455810546875,
             "disk_write_time": 116.568115234375,
             "response_time": 3081.259521484375
         },
-        "/1280x720/1": {
+        "1280x720/1": {
             "transfer_time": 64.765380859375,
             "disk_write_time": 4.170166015625,
             "response_time": 631.71533203125
         },
-        "/1280x720/2": {
+        "1280x720/2": {
             "transfer_time": 66.609130859375,
             "disk_write_time": 6.806640625,
             "response_time": 1159.91064453125
         },
-        "/1280x720/4": {
+        "1280x720/4": {
             "transfer_time": 69.125244140625,
             "disk_write_time": 14.270263671875,
             "response_time": 577.120849609375
         },
-        "/1280x720/8": {
+        "1280x720/8": {
             "transfer_time": 72.80322265625,
             "disk_write_time": 27.650390625,
             "response_time": 1419.840576171875
         },
-        "/1280x720/16": {
+        "1280x720/16": {
             "transfer_time": 88.020263671875,
             "disk_write_time": 69.192138671875,
             "response_time": 2296.625244140625
         },
-        "/1280x720/32": {
+        "1280x720/32": {
             "transfer_time": 182.726318359375,
             "disk_write_time": 154.52099609375,
             "response_time": 3161.07470703125
         },
-        "/1280x800/1": {
+        "1280x800/1": {
             "transfer_time": 79.58984375,
             "disk_write_time": 3.942138671875,
             "response_time": 999.81298828125
         },
-        "/1280x800/2": {
+        "1280x800/2": {
             "transfer_time": 84.857421875,
             "disk_write_time": 7.739990234375,
             "response_time": 451.607666015625
         },
-        "/1280x800/4": {
+        "1280x800/4": {
             "transfer_time": 86.118408203125,
             "disk_write_time": 15.379638671875,
             "response_time": 1250.47998046875
         },
-        "/1280x800/8": {
+        "1280x800/8": {
             "transfer_time": 86.7138671875,
             "disk_write_time": 40.1533203125,
             "response_time": 955.091796875
         },
-        "/1280x800/16": {
+        "1280x800/16": {
             "transfer_time": 122.224365234375,
             "disk_write_time": 82.015625,
             "response_time": 1450.62548828125
         },
-        "/1280x800/32": {
+        "1280x800/32": {
             "transfer_time": 173.9970703125,
             "disk_write_time": 165.4443359375,
             "response_time": 3579.100341796875
         },
-        "/1280x960/1": {
+        "1280x960/1": {
             "transfer_time": 65.828125,
             "disk_write_time": 4.710693359375,
             "response_time": 758.093017578125
         },
-        "/1280x960/2": {
+        "1280x960/2": {
             "transfer_time": 67.2734375,
             "disk_write_time": 12.871826171875,
             "response_time": 1109.36181640625
         },
-        "/1280x960/4": {
+        "1280x960/4": {
             "transfer_time": 69.68408203125,
             "disk_write_time": 18.59521484375,
             "response_time": 1206.16162109375
         },
-        "/1280x960/8": {
+        "1280x960/8": {
             "transfer_time": 82.91796875,
             "disk_write_time": 43.57568359375,
             "response_time": 1810.73388671875
         },
-        "/1280x960/16": {
+        "1280x960/16": {
             "transfer_time": 104.470703125,
             "disk_write_time": 98.37548828125,
             "response_time": 2600.7236328125
         },
-        "/1280x960/32": {
+        "1280x960/32": {
             "transfer_time": 137.4990234375,
             "disk_write_time": 225.34765625,
             "response_time": 2978.373046875
         },
-        "/1440x900/1": {
+        "1440x900/1": {
             "transfer_time": 65.882568359375,
             "disk_write_time": 5.53076171875,
             "response_time": 827.240966796875
         },
-        "/1440x900/2": {
+        "1440x900/2": {
             "transfer_time": 79.34716796875,
             "disk_write_time": 13.212890625,
             "response_time": 1082.715576171875
         },
-        "/1440x900/4": {
+        "1440x900/4": {
             "transfer_time": 81.110595703125,
             "disk_write_time": 21.51708984375,
             "response_time": 1724.927001953125
         },
-        "/1440x900/8": {
+        "1440x900/8": {
             "transfer_time": 96.838134765625,
             "disk_write_time": 50.966064453125,
             "response_time": 1081.093505859375
         },
-        "/1440x900/16": {
+        "1440x900/16": {
             "transfer_time": 120.62353515625,
             "disk_write_time": 103.940185546875,
             "response_time": 2641.593505859375
         },
-        "/1440x900/32": {
+        "1440x900/32": {
             "transfer_time": 153.97509765625,
             "disk_write_time": 340.94189453125,
             "response_time": 3152.067138671875
         },
-        "/1440x1080/1": {
+        "1440x1080/1": {
             "transfer_time": 67.5859375,
             "disk_write_time": 6.641357421875,
             "response_time": 974.977294921875
         },
-        "/1440x1080/2": {
+        "1440x1080/2": {
             "transfer_time": 72.175537109375,
             "disk_write_time": 12.14453125,
             "response_time": 1278.399658203125
         },
-        "/1440x1080/4": {
+        "1440x1080/4": {
             "transfer_time": 71.0859375,
             "disk_write_time": 30.54345703125,
             "response_time": 1417.7587890625
         },
-        "/1440x1080/8": {
+        "1440x1080/8": {
             "transfer_time": 100.125244140625,
             "disk_write_time": 46.2607421875,
             "response_time": 2103.202392578125
         },
-        "/1440x1080/16": {
+        "1440x1080/16": {
             "transfer_time": 129.31494140625,
             "disk_write_time": 125.125,
             "response_time": 2892.319091796875
         },
-        "/1440x1080/32": {
+        "1440x1080/32": {
             "transfer_time": 210.150146484375,
             "disk_write_time": 622.707763671875,
             "response_time": 5152.464111328125
         },
-        "/1920x1080/1": {
+        "1920x1080/1": {
             "transfer_time": 68.6572265625,
             "disk_write_time": 7.745361328125,
             "response_time": 1205.375244140625
         },
-        "/1920x1080/2": {
+        "1920x1080/2": {
             "transfer_time": 69.0791015625,
             "disk_write_time": 16.990234375,
             "response_time": 1211.04736328125
         },
-        "/1920x1080/4": {
+        "1920x1080/4": {
             "transfer_time": 73.93408203125,
             "disk_write_time": 39.396728515625,
             "response_time": 863.854736328125
         },
-        "/1920x1080/8": {
+        "1920x1080/8": {
             "transfer_time": 98.80078125,
             "disk_write_time": 64.9609375,
             "response_time": 1384.458984375
         },
-        "/1920x1080/16": {
+        "1920x1080/16": {
             "transfer_time": 123.728759765625,
             "disk_write_time": 289.726318359375,
             "response_time": 2655.81494140625
         },
-        "/1920x1080/32": {
+        "1920x1080/32": {
             "transfer_time": 192.8515625,
             "disk_write_time": 1286.188720703125,
             "response_time": 6122.794189453125
