@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/edge-computing/ssd_accuracy_measure/run.py", line 2, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/common.py:13: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Classification/ConvNets/image_classification/models/efficientnet.py:17: UserWarning: pytorch_quantization module not found, quantization will not be available
+  warnings.warn(
+Using cache found in /home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub
+/home/ubuntu/.cache/torch/hub/NVIDIA_DeepLearningExamples_torchhub/PyTorch/Detection/SSD/ssd/entrypoints.py:163: ResourceWarning: unclosed file <_io.TextIOWrapper name='category_names.txt' mode='r' encoding='UTF-8'>
+  class_names = open("category_names.txt").readlines()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+Using cache found in /home/ubuntu/.cache/torch/hub/ultralytics_yolov5_master
+YOLOv5 🚀 2023-11-21 Python-3.10.13 torch-2.1.0 CUDA:0 (Tesla V100-SXM2-16GB, 16151MiB)
+
+Fusing layers... 
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients, 16.4 GFLOPs
+Adding AutoShape... 
