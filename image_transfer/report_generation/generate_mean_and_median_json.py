@@ -2,7 +2,7 @@ import os
 import json
 
 raw_results_base_path = "/Users/abdurrouf/edge-computing/image_transfer/report_generation/raw_results"
-parts = ["compression", "decompression", "transfer"]
+parts = ["transfer_n_cal"]
 transfer_image_type = ["original", "compressed"]
 transfer_time_type = ["transfer_time", "disk_write_time", "response_time"]
 resolutions = ['160x90', '160x100', '160x120', '320x180', '320x200', '320x240', '480x270', '480x300', '480x360', '640x360', '640x400', '640x480', '800x450', '800x500', '800x600', '1024x576', '1024x640', '1024x768', '1280x720', '1280x800', '1280x960', '1440x900', '1440x1080', '1920x1080']
