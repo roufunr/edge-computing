@@ -1,5 +1,6 @@
 import torch
 import logging
+import json
 
 logging.basicConfig(filename='object_detection_calculate_metrics.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -62,4 +63,38 @@ def get_ssd_object_list(image_path):
             object_list.append(classes_to_labels[classes[idx] - 1])
         objects_list.append(object_list)
     return objects_list[0]
+
+def load_from_json(json_path):
+    with open(json_path, 'r') as json_file:
+        # Load JSON data into a dictionary
+        data = json.load(json_file)
+    return data
+
+def save_as_a_json(json_file_path, json_dict):
+    with open(json_file_path, 'w') as json_file:
+        json.dump(json_dict, json_file)
+
+# labels = load_from_json("/home/ubuntu/edge-computing/ssd_accuracy_measure/valid_labels.json")
+# val_img_path = "/home/ubuntu/coco2017/val2017"
+
+# total_images = len(labels)
+# done_images = 0
+# accurate_labels = {}
+
+# for label in labels:
+#     labeled_objects = labels[label]
+#     image_path = val_img_path + "/" + label + ".jpg"
+#     inferred_objects = get_ssd_object_list(image_path)
+#     metrics = calculate_metrics(inferred_objects, labeled_objects)
+#     if metrics['accuracy'] > 0.60: 
+#         accurate_labels[label] = labels[label]
+#     done_images += 1
+#     print("DONE ", str(done_images/total_images))
+
+# save_as_a_json("more_accurate_labels.json", accurate_labels)
+
+
+accurate_labels = load_from_json('/home/ubuntu/edge-computing/ssd_accuracy_measure/more_accurate_labels.json')
+print(len(accurate_labels))
+
 
