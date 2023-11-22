@@ -1,0 +1,1536 @@
+{
+    "compressed": {
+        "9/compressed/INTER_NEAREST/0.1/240x180/1/": {
+            "transfer_time": 60.80322265625,
+            "disk_write_time": 0.090087890625,
+            "response_time": 76.898681640625
+        },
+        "9/compressed/INTER_NEAREST/0.1/240x180/2/": {
+            "transfer_time": 63.626708984375,
+            "disk_write_time": 0.14697265625,
+            "response_time": 79.550537109375
+        },
+        "9/compressed/INTER_NEAREST/0.1/240x180/4/": {
+            "transfer_time": 66.28466796875,
+            "disk_write_time": 0.220458984375,
+            "response_time": 82.3037109375
+        },
+        "9/compressed/INTER_NEAREST/0.1/240x180/8/": {
+            "transfer_time": 73.681396484375,
+            "disk_write_time": 0.434814453125,
+            "response_time": 90.55810546875
+        },
+        "9/compressed/INTER_NEAREST/0.1/240x180/16/": {
+            "transfer_time": 74.5234375,
+            "disk_write_time": 0.7197265625,
+            "response_time": 130.9462890625
+        },
+        "9/compressed/INTER_NEAREST/0.1/240x180/32/": {
+            "transfer_time": 75.353759765625,
+            "disk_write_time": 1.355712890625,
+            "response_time": 189.76513671875
+        },
+        "9/compressed/INTER_NEAREST/0.2/240x180/1/": {
+            "transfer_time": 60.9677734375,
+            "disk_write_time": 0.088134765625,
+            "response_time": 76.908447265625
+        },
+        "9/compressed/INTER_NEAREST/0.2/240x180/2/": {
+            "transfer_time": 64.578857421875,
+            "disk_write_time": 0.14404296875,
+            "response_time": 90.162353515625
+        },
+        "9/compressed/INTER_NEAREST/0.2/240x180/4/": {
+            "transfer_time": 65.057861328125,
+            "disk_write_time": 0.24853515625,
+            "response_time": 111.6533203125
+        },
+        "9/compressed/INTER_NEAREST/0.2/240x180/8/": {
+            "transfer_time": 65.981201171875,
+            "disk_write_time": 0.463623046875,
+            "response_time": 152.44140625
+        },
+        "9/compressed/INTER_NEAREST/0.2/240x180/16/": {
+            "transfer_time": 66.787109375,
+            "disk_write_time": 0.872802734375,
+            "response_time": 202.792236328125
+        },
+        "9/compressed/INTER_NEAREST/0.2/240x180/32/": {
+            "transfer_time": 67.913330078125,
+            "disk_write_time": 1.640380859375,
+            "response_time": 260.744873046875
+        },
+        "9/compressed/INTER_NEAREST/0.3/240x180/1/": {
+            "transfer_time": 63.229248046875,
+            "disk_write_time": 0.122314453125,
+            "response_time": 79.446533203125
+        },
+        "9/compressed/INTER_NEAREST/0.3/240x180/2/": {
+            "transfer_time": 64.904052734375,
+            "disk_write_time": 0.1953125,
+            "response_time": 111.195068359375
+        },
+        "9/compressed/INTER_NEAREST/0.3/240x180/4/": {
+            "transfer_time": 66.235107421875,
+            "disk_write_time": 0.278076171875,
+            "response_time": 150.417724609375
+        },
+        "9/compressed/INTER_NEAREST/0.3/240x180/8/": {
+            "transfer_time": 65.05322265625,
+            "disk_write_time": 0.527587890625,
+            "response_time": 157.132568359375
+        },
+        "9/compressed/INTER_NEAREST/0.3/240x180/16/": {
+            "transfer_time": 64.1005859375,
+            "disk_write_time": 0.8916015625,
+            "response_time": 229.7099609375
+        },
+        "9/compressed/INTER_NEAREST/0.3/240x180/32/": {
+            "transfer_time": 65.873291015625,
+            "disk_write_time": 1.75634765625,
+            "response_time": 300.005126953125
+        },
+        "9/compressed/INTER_NEAREST/0.4/240x180/1/": {
+            "transfer_time": 63.449951171875,
+            "disk_write_time": 0.128173828125,
+            "response_time": 111.80078125
+        },
+        "9/compressed/INTER_NEAREST/0.4/240x180/2/": {
+            "transfer_time": 64.32275390625,
+            "disk_write_time": 0.174560546875,
+            "response_time": 150.76123046875
+        },
+        "9/compressed/INTER_NEAREST/0.4/240x180/4/": {
+            "transfer_time": 64.74462890625,
+            "disk_write_time": 0.311767578125,
+            "response_time": 157.6875
+        },
+        "9/compressed/INTER_NEAREST/0.4/240x180/8/": {
+            "transfer_time": 63.56298828125,
+            "disk_write_time": 0.601318359375,
+            "response_time": 217.98095703125
+        },
+        "9/compressed/INTER_NEAREST/0.4/240x180/16/": {
+            "transfer_time": 64.094482421875,
+            "disk_write_time": 1.074462890625,
+            "response_time": 281.78759765625
+        },
+        "9/compressed/INTER_NEAREST/0.4/240x180/32/": {
+            "transfer_time": 65.53759765625,
+            "disk_write_time": 2.17919921875,
+            "response_time": 396.685302734375
+        },
+        "9/compressed/INTER_NEAREST/0.5/240x180/1/": {
+            "transfer_time": 64.493896484375,
+            "disk_write_time": 0.123291015625,
+            "response_time": 112.70849609375
+        },
+        "9/compressed/INTER_NEAREST/0.5/240x180/2/": {
+            "transfer_time": 64.60107421875,
+            "disk_write_time": 0.235107421875,
+            "response_time": 150.99267578125
+        },
+        "9/compressed/INTER_NEAREST/0.5/240x180/4/": {
+            "transfer_time": 63.546875,
+            "disk_write_time": 0.375244140625,
+            "response_time": 183.879150390625
+        },
+        "9/compressed/INTER_NEAREST/0.5/240x180/8/": {
+            "transfer_time": 63.87939453125,
+            "disk_write_time": 0.7060546875,
+            "response_time": 291.233642578125
+        },
+        "9/compressed/INTER_NEAREST/0.5/240x180/16/": {
+            "transfer_time": 63.944580078125,
+            "disk_write_time": 1.347412109375,
+            "response_time": 399.544677734375
+        },
+        "9/compressed/INTER_NEAREST/0.5/240x180/32/": {
+            "transfer_time": 64.526611328125,
+            "disk_write_time": 5.47412109375,
+            "response_time": 350.567626953125
+        },
+        "9/compressed/INTER_NEAREST/0.6/240x180/1/": {
+            "transfer_time": 63.725341796875,
+            "disk_write_time": 0.13525390625,
+            "response_time": 143.62939453125
+        },
+        "9/compressed/INTER_NEAREST/0.6/240x180/2/": {
+            "transfer_time": 62.860107421875,
+            "disk_write_time": 0.281005859375,
+            "response_time": 146.2958984375
+        },
+        "9/compressed/INTER_NEAREST/0.6/240x180/4/": {
+            "transfer_time": 63.9453125,
+            "disk_write_time": 0.471923828125,
+            "response_time": 247.18017578125
+        },
+        "9/compressed/INTER_NEAREST/0.6/240x180/8/": {
+            "transfer_time": 64.199951171875,
+            "disk_write_time": 0.784912109375,
+            "response_time": 361.42041015625
+        },
+        "9/compressed/INTER_NEAREST/0.6/240x180/16/": {
+            "transfer_time": 64.240234375,
+            "disk_write_time": 1.627197265625,
+            "response_time": 480.35498046875
+        },
+        "9/compressed/INTER_NEAREST/0.6/240x180/32/": {
+            "transfer_time": 64.806640625,
+            "disk_write_time": 2.932861328125,
+            "response_time": 829.30224609375
+        },
+        "9/compressed/INTER_NEAREST/0.7/240x180/1/": {
+            "transfer_time": 63.674560546875,
+            "disk_write_time": 0.161865234375,
+            "response_time": 146.709228515625
+        },
+        "9/compressed/INTER_NEAREST/0.7/240x180/2/": {
+            "transfer_time": 63.85693359375,
+            "disk_write_time": 0.273193359375,
+            "response_time": 196.55859375
+        },
+        "9/compressed/INTER_NEAREST/0.7/240x180/4/": {
+            "transfer_time": 64.261474609375,
+            "disk_write_time": 0.507080078125,
+            "response_time": 241.9169921875
+        },
+        "9/compressed/INTER_NEAREST/0.7/240x180/8/": {
+            "transfer_time": 63.82568359375,
+            "disk_write_time": 0.91748046875,
+            "response_time": 313.296875
+        },
+        "9/compressed/INTER_NEAREST/0.7/240x180/16/": {
+            "transfer_time": 63.099365234375,
+            "disk_write_time": 1.821533203125,
+            "response_time": 300.233154296875
+        },
+        "9/compressed/INTER_NEAREST/0.7/240x180/32/": {
+            "transfer_time": 64.722412109375,
+            "disk_write_time": 3.45361328125,
+            "response_time": 461.5234375
+        },
+        "9/compressed/INTER_NEAREST/0.8/240x180/1/": {
+            "transfer_time": 63.35009765625,
+            "disk_write_time": 0.1875,
+            "response_time": 149.883056640625
+        },
+        "9/compressed/INTER_NEAREST/0.8/240x180/2/": {
+            "transfer_time": 64.64599609375,
+            "disk_write_time": 0.328857421875,
+            "response_time": 227.855224609375
+        },
+        "9/compressed/INTER_NEAREST/0.8/240x180/4/": {
+            "transfer_time": 64.916015625,
+            "disk_write_time": 0.611083984375,
+            "response_time": 363.831298828125
+        },
+        "9/compressed/INTER_NEAREST/0.8/240x180/8/": {
+            "transfer_time": 64.334716796875,
+            "disk_write_time": 1.068359375,
+            "response_time": 362.062255859375
+        },
+        "9/compressed/INTER_NEAREST/0.8/240x180/16/": {
+            "transfer_time": 64.242919921875,
+            "disk_write_time": 2.0791015625,
+            "response_time": 417.085205078125
+        },
+        "9/compressed/INTER_NEAREST/0.8/240x180/32/": {
+            "transfer_time": 63.8876953125,
+            "disk_write_time": 4.5224609375,
+            "response_time": 775.493408203125
+        },
+        "9/compressed/INTER_NEAREST/0.9/240x180/1/": {
+            "transfer_time": 63.79833984375,
+            "disk_write_time": 0.21142578125,
+            "response_time": 183.259765625
+        },
+        "9/compressed/INTER_NEAREST/0.9/240x180/2/": {
+            "transfer_time": 64.933349609375,
+            "disk_write_time": 0.397216796875,
+            "response_time": 243.7353515625
+        },
+        "9/compressed/INTER_NEAREST/0.9/240x180/4/": {
+            "transfer_time": 62.92041015625,
+            "disk_write_time": 0.69677734375,
+            "response_time": 295.474609375
+        },
+        "9/compressed/INTER_NEAREST/0.9/240x180/8/": {
+            "transfer_time": 64.054931640625,
+            "disk_write_time": 1.29150390625,
+            "response_time": 353.910400390625
+        },
+        "9/compressed/INTER_NEAREST/0.9/240x180/16/": {
+            "transfer_time": 64.5458984375,
+            "disk_write_time": 4.21826171875,
+            "response_time": 607.004638671875
+        },
+        "9/compressed/INTER_NEAREST/0.9/240x180/32/": {
+            "transfer_time": 64.441650390625,
+            "disk_write_time": 5.724609375,
+            "response_time": 387.212890625
+        },
+        "9/compressed/INTER_NEAREST/1/240x180/1/": {
+            "transfer_time": 63.624267578125,
+            "disk_write_time": 0.228759765625,
+            "response_time": 187.291259765625
+        },
+        "9/compressed/INTER_NEAREST/1/240x180/2/": {
+            "transfer_time": 65.072509765625,
+            "disk_write_time": 0.481689453125,
+            "response_time": 274.77001953125
+        },
+        "9/compressed/INTER_NEAREST/1/240x180/4/": {
+            "transfer_time": 65.134033203125,
+            "disk_write_time": 0.734619140625,
+            "response_time": 357.840087890625
+        },
+        "9/compressed/INTER_NEAREST/1/240x180/8/": {
+            "transfer_time": 65.271240234375,
+            "disk_write_time": 1.503662109375,
+            "response_time": 476.949462890625
+        },
+        "9/compressed/INTER_NEAREST/1/240x180/16/": {
+            "transfer_time": 70.65478515625,
+            "disk_write_time": 2.950927734375,
+            "response_time": 551.324951171875
+        },
+        "9/compressed/INTER_NEAREST/1/240x180/32/": {
+            "transfer_time": 67.14404296875,
+            "disk_write_time": 5.87060546875,
+            "response_time": 429.78515625
+        },
+        "9/compressed/INTER_LINEAR/0.1/240x180/1/": {
+            "transfer_time": 61.82421875,
+            "disk_write_time": 0.07958984375,
+            "response_time": 77.87841796875
+        },
+        "9/compressed/INTER_LINEAR/0.1/240x180/2/": {
+            "transfer_time": 63.7216796875,
+            "disk_write_time": 0.145751953125,
+            "response_time": 79.61669921875
+        },
+        "9/compressed/INTER_LINEAR/0.1/240x180/4/": {
+            "transfer_time": 66.189697265625,
+            "disk_write_time": 0.225341796875,
+            "response_time": 82.328857421875
+        },
+        "9/compressed/INTER_LINEAR/0.1/240x180/8/": {
+            "transfer_time": 72.507080078125,
+            "disk_write_time": 0.376220703125,
+            "response_time": 89.294921875
+        },
+        "9/compressed/INTER_LINEAR/0.1/240x180/16/": {
+            "transfer_time": 73.7802734375,
+            "disk_write_time": 0.727294921875,
+            "response_time": 130.308349609375
+        },
+        "9/compressed/INTER_LINEAR/0.1/240x180/32/": {
+            "transfer_time": 74.90771484375,
+            "disk_write_time": 1.458984375,
+            "response_time": 188.892822265625
+        },
+        "9/compressed/INTER_LINEAR/0.2/240x180/1/": {
+            "transfer_time": 62.78857421875,
+            "disk_write_time": 0.099853515625,
+            "response_time": 79.08837890625
+        },
+        "9/compressed/INTER_LINEAR/0.2/240x180/2/": {
+            "transfer_time": 63.37939453125,
+            "disk_write_time": 0.1455078125,
+            "response_time": 79.298828125
+        },
+        "9/compressed/INTER_LINEAR/0.2/240x180/4/": {
+            "transfer_time": 67.210693359375,
+            "disk_write_time": 0.24365234375,
+            "response_time": 114.879150390625
+        },
+        "9/compressed/INTER_LINEAR/0.2/240x180/8/": {
+            "transfer_time": 65.41650390625,
+            "disk_write_time": 0.43798828125,
+            "response_time": 151.719482421875
+        },
+        "9/compressed/INTER_LINEAR/0.2/240x180/16/": {
+            "transfer_time": 65.452392578125,
+            "disk_write_time": 0.860107421875,
+            "response_time": 166.434326171875
+        },
+        "9/compressed/INTER_LINEAR/0.2/240x180/32/": {
+            "transfer_time": 67.1533203125,
+            "disk_write_time": 1.629638671875,
+            "response_time": 262.18212890625
+        },
+        "9/compressed/INTER_LINEAR/0.3/240x180/1/": {
+            "transfer_time": 63.4951171875,
+            "disk_write_time": 0.1123046875,
+            "response_time": 79.632080078125
+        },
+        "9/compressed/INTER_LINEAR/0.3/240x180/2/": {
+            "transfer_time": 65.8720703125,
+            "disk_write_time": 0.18310546875,
+            "response_time": 112.677734375
+        },
+        "9/compressed/INTER_LINEAR/0.3/240x180/4/": {
+            "transfer_time": 65.111328125,
+            "disk_write_time": 0.31494140625,
+            "response_time": 148.16357421875
+        },
+        "9/compressed/INTER_LINEAR/0.3/240x180/8/": {
+            "transfer_time": 65.989013671875,
+            "disk_write_time": 0.50830078125,
+            "response_time": 166.19970703125
+        },
+        "9/compressed/INTER_LINEAR/0.3/240x180/16/": {
+            "transfer_time": 65.46728515625,
+            "disk_write_time": 0.902587890625,
+            "response_time": 250.307373046875
+        },
+        "9/compressed/INTER_LINEAR/0.3/240x180/32/": {
+            "transfer_time": 66.763427734375,
+            "disk_write_time": 3.57177734375,
+            "response_time": 438.922607421875
+        },
+        "9/compressed/INTER_LINEAR/0.4/240x180/1/": {
+            "transfer_time": 63.5166015625,
+            "disk_write_time": 0.146728515625,
+            "response_time": 109.15087890625
+        },
+        "9/compressed/INTER_LINEAR/0.4/240x180/2/": {
+            "transfer_time": 63.706787109375,
+            "disk_write_time": 0.198974609375,
+            "response_time": 144.257080078125
+        },
+        "9/compressed/INTER_LINEAR/0.4/240x180/4/": {
+            "transfer_time": 64.774658203125,
+            "disk_write_time": 0.3251953125,
+            "response_time": 157.14208984375
+        },
+        "9/compressed/INTER_LINEAR/0.4/240x180/8/": {
+            "transfer_time": 63.9921875,
+            "disk_write_time": 0.60693359375,
+            "response_time": 236.719970703125
+        },
+        "9/compressed/INTER_LINEAR/0.4/240x180/16/": {
+            "transfer_time": 63.845703125,
+            "disk_write_time": 1.049560546875,
+            "response_time": 342.214111328125
+        },
+        "9/compressed/INTER_LINEAR/0.4/240x180/32/": {
+            "transfer_time": 65.450439453125,
+            "disk_write_time": 2.072998046875,
+            "response_time": 328.941162109375
+        },
+        "9/compressed/INTER_LINEAR/0.5/240x180/1/": {
+            "transfer_time": 63.05712890625,
+            "disk_write_time": 0.094482421875,
+            "response_time": 109.1015625
+        },
+        "9/compressed/INTER_LINEAR/0.5/240x180/2/": {
+            "transfer_time": 63.335693359375,
+            "disk_write_time": 0.2724609375,
+            "response_time": 144.33544921875
+        },
+        "9/compressed/INTER_LINEAR/0.5/240x180/4/": {
+            "transfer_time": 63.731689453125,
+            "disk_write_time": 0.34814453125,
+            "response_time": 183.787353515625
+        },
+        "9/compressed/INTER_LINEAR/0.5/240x180/8/": {
+            "transfer_time": 62.91943359375,
+            "disk_write_time": 0.684814453125,
+            "response_time": 288.036376953125
+        },
+        "9/compressed/INTER_LINEAR/0.5/240x180/16/": {
+            "transfer_time": 64.319580078125,
+            "disk_write_time": 1.2841796875,
+            "response_time": 295.657958984375
+        },
+        "9/compressed/INTER_LINEAR/0.5/240x180/32/": {
+            "transfer_time": 64.370849609375,
+            "disk_write_time": 2.523681640625,
+            "response_time": 334.04345703125
+        },
+        "9/compressed/INTER_LINEAR/0.6/240x180/1/": {
+            "transfer_time": 64.7294921875,
+            "disk_write_time": 0.158935546875,
+            "response_time": 145.63232421875
+        },
+        "9/compressed/INTER_LINEAR/0.6/240x180/2/": {
+            "transfer_time": 64.943603515625,
+            "disk_write_time": 0.281982421875,
+            "response_time": 155.663818359375
+        },
+        "9/compressed/INTER_LINEAR/0.6/240x180/4/": {
+            "transfer_time": 64.74609375,
+            "disk_write_time": 0.43603515625,
+            "response_time": 231.1318359375
+        },
+        "9/compressed/INTER_LINEAR/0.6/240x180/8/": {
+            "transfer_time": 64.822509765625,
+            "disk_write_time": 0.867919921875,
+            "response_time": 285.370849609375
+        },
+        "9/compressed/INTER_LINEAR/0.6/240x180/16/": {
+            "transfer_time": 63.970458984375,
+            "disk_write_time": 1.592041015625,
+            "response_time": 298.9345703125
+        },
+        "9/compressed/INTER_LINEAR/0.6/240x180/32/": {
+            "transfer_time": 64.457275390625,
+            "disk_write_time": 2.950439453125,
+            "response_time": 384.740234375
+        },
+        "9/compressed/INTER_LINEAR/0.7/240x180/1/": {
+            "transfer_time": 64.7265625,
+            "disk_write_time": 0.179931640625,
+            "response_time": 147.80078125
+        },
+        "9/compressed/INTER_LINEAR/0.7/240x180/2/": {
+            "transfer_time": 64.81640625,
+            "disk_write_time": 0.32373046875,
+            "response_time": 197.024169921875
+        },
+        "9/compressed/INTER_LINEAR/0.7/240x180/4/": {
+            "transfer_time": 65.08056640625,
+            "disk_write_time": 0.58935546875,
+            "response_time": 245.78662109375
+        },
+        "9/compressed/INTER_LINEAR/0.7/240x180/8/": {
+            "transfer_time": 62.671630859375,
+            "disk_write_time": 2.56201171875,
+            "response_time": 345.708984375
+        },
+        "9/compressed/INTER_LINEAR/0.7/240x180/16/": {
+            "transfer_time": 64.35888671875,
+            "disk_write_time": 1.7197265625,
+            "response_time": 328.215576171875
+        },
+        "9/compressed/INTER_LINEAR/0.7/240x180/32/": {
+            "transfer_time": 63.7177734375,
+            "disk_write_time": 3.451416015625,
+            "response_time": 504.49072265625
+        },
+        "9/compressed/INTER_LINEAR/0.8/240x180/1/": {
+            "transfer_time": 64.54833984375,
+            "disk_write_time": 0.188232421875,
+            "response_time": 151.910888671875
+        },
+        "9/compressed/INTER_LINEAR/0.8/240x180/2/": {
+            "transfer_time": 63.99169921875,
+            "disk_write_time": 0.3369140625,
+            "response_time": 224.92724609375
+        },
+        "9/compressed/INTER_LINEAR/0.8/240x180/4/": {
+            "transfer_time": 62.674072265625,
+            "disk_write_time": 0.59228515625,
+            "response_time": 285.684814453125
+        },
+        "9/compressed/INTER_LINEAR/0.8/240x180/8/": {
+            "transfer_time": 64.04833984375,
+            "disk_write_time": 1.111328125,
+            "response_time": 306.083984375
+        },
+        "9/compressed/INTER_LINEAR/0.8/240x180/16/": {
+            "transfer_time": 64.23388671875,
+            "disk_write_time": 2.207763671875,
+            "response_time": 365.408203125
+        },
+        "9/compressed/INTER_LINEAR/0.8/240x180/32/": {
+            "transfer_time": 65.956298828125,
+            "disk_write_time": 6.753662109375,
+            "response_time": 999.8037109375
+        },
+        "9/compressed/INTER_LINEAR/0.9/240x180/1/": {
+            "transfer_time": 64.667724609375,
+            "disk_write_time": 0.23681640625,
+            "response_time": 190.995849609375
+        },
+        "9/compressed/INTER_LINEAR/0.9/240x180/2/": {
+            "transfer_time": 62.571533203125,
+            "disk_write_time": 0.380126953125,
+            "response_time": 243.110107421875
+        },
+        "9/compressed/INTER_LINEAR/0.9/240x180/4/": {
+            "transfer_time": 64.922119140625,
+            "disk_write_time": 0.707763671875,
+            "response_time": 364.51318359375
+        },
+        "9/compressed/INTER_LINEAR/0.9/240x180/8/": {
+            "transfer_time": 65.275634765625,
+            "disk_write_time": 1.289306640625,
+            "response_time": 464.42431640625
+        },
+        "9/compressed/INTER_LINEAR/0.9/240x180/16/": {
+            "transfer_time": 64.7421875,
+            "disk_write_time": 3.8505859375,
+            "response_time": 565.838134765625
+        },
+        "9/compressed/INTER_LINEAR/0.9/240x180/32/": {
+            "transfer_time": 66.61474609375,
+            "disk_write_time": 5.073974609375,
+            "response_time": 828.66748046875
+        },
+        "9/compressed/INTER_LINEAR/1/240x180/1/": {
+            "transfer_time": 64.646240234375,
+            "disk_write_time": 0.270263671875,
+            "response_time": 190.728271484375
+        },
+        "9/compressed/INTER_LINEAR/1/240x180/2/": {
+            "transfer_time": 65.046875,
+            "disk_write_time": 0.4453125,
+            "response_time": 274.93408203125
+        },
+        "9/compressed/INTER_LINEAR/1/240x180/4/": {
+            "transfer_time": 65.023193359375,
+            "disk_write_time": 0.7587890625,
+            "response_time": 366.946533203125
+        },
+        "9/compressed/INTER_LINEAR/1/240x180/8/": {
+            "transfer_time": 64.384521484375,
+            "disk_write_time": 1.5537109375,
+            "response_time": 391.154296875
+        },
+        "9/compressed/INTER_LINEAR/1/240x180/16/": {
+            "transfer_time": 65.130859375,
+            "disk_write_time": 2.923095703125,
+            "response_time": 626.347412109375
+        },
+        "9/compressed/INTER_LINEAR/1/240x180/32/": {
+            "transfer_time": 68.15283203125,
+            "disk_write_time": 5.8798828125,
+            "response_time": 614.1181640625
+        },
+        "9/compressed/INTER_CUBIC/0.1/240x180/1/": {
+            "transfer_time": 61.73779296875,
+            "disk_write_time": 0.066650390625,
+            "response_time": 77.625
+        },
+        "9/compressed/INTER_CUBIC/0.1/240x180/2/": {
+            "transfer_time": 71.234130859375,
+            "disk_write_time": 0.121826171875,
+            "response_time": 87.001953125
+        },
+        "9/compressed/INTER_CUBIC/0.1/240x180/4/": {
+            "transfer_time": 66.755859375,
+            "disk_write_time": 0.201904296875,
+            "response_time": 82.68212890625
+        },
+        "9/compressed/INTER_CUBIC/0.1/240x180/8/": {
+            "transfer_time": 74.1689453125,
+            "disk_write_time": 0.36669921875,
+            "response_time": 90.63671875
+        },
+        "9/compressed/INTER_CUBIC/0.1/240x180/16/": {
+            "transfer_time": 73.27783203125,
+            "disk_write_time": 0.69287109375,
+            "response_time": 129.195068359375
+        },
+        "9/compressed/INTER_CUBIC/0.1/240x180/32/": {
+            "transfer_time": 75.042236328125,
+            "disk_write_time": 1.3564453125,
+            "response_time": 188.61669921875
+        },
+        "9/compressed/INTER_CUBIC/0.2/240x180/1/": {
+            "transfer_time": 62.8916015625,
+            "disk_write_time": 0.08740234375,
+            "response_time": 78.74609375
+        },
+        "9/compressed/INTER_CUBIC/0.2/240x180/2/": {
+            "transfer_time": 65.3095703125,
+            "disk_write_time": 0.1513671875,
+            "response_time": 81.537353515625
+        },
+        "9/compressed/INTER_CUBIC/0.2/240x180/4/": {
+            "transfer_time": 67.17236328125,
+            "disk_write_time": 0.240478515625,
+            "response_time": 115.04541015625
+        },
+        "9/compressed/INTER_CUBIC/0.2/240x180/8/": {
+            "transfer_time": 66.09423828125,
+            "disk_write_time": 0.45458984375,
+            "response_time": 151.34326171875
+        },
+        "9/compressed/INTER_CUBIC/0.2/240x180/16/": {
+            "transfer_time": 78.353271484375,
+            "disk_write_time": 0.8017578125,
+            "response_time": 186.262451171875
+        },
+        "9/compressed/INTER_CUBIC/0.2/240x180/32/": {
+            "transfer_time": 65.85595703125,
+            "disk_write_time": 1.621337890625,
+            "response_time": 244.54345703125
+        },
+        "9/compressed/INTER_CUBIC/0.3/240x180/1/": {
+            "transfer_time": 62.35693359375,
+            "disk_write_time": 0.108154296875,
+            "response_time": 78.53173828125
+        },
+        "9/compressed/INTER_CUBIC/0.3/240x180/2/": {
+            "transfer_time": 65.21630859375,
+            "disk_write_time": 1.852783203125,
+            "response_time": 113.1923828125
+        },
+        "9/compressed/INTER_CUBIC/0.3/240x180/4/": {
+            "transfer_time": 63.828369140625,
+            "disk_write_time": 0.25732421875,
+            "response_time": 144.0361328125
+        },
+        "9/compressed/INTER_CUBIC/0.3/240x180/8/": {
+            "transfer_time": 65.292724609375,
+            "disk_write_time": 0.5322265625,
+            "response_time": 163.92041015625
+        },
+        "9/compressed/INTER_CUBIC/0.3/240x180/16/": {
+            "transfer_time": 66.3701171875,
+            "disk_write_time": 0.83935546875,
+            "response_time": 260.4228515625
+        },
+        "9/compressed/INTER_CUBIC/0.3/240x180/32/": {
+            "transfer_time": 67.23583984375,
+            "disk_write_time": 1.600830078125,
+            "response_time": 327.37109375
+        },
+        "9/compressed/INTER_CUBIC/0.4/240x180/1/": {
+            "transfer_time": 63.497802734375,
+            "disk_write_time": 0.12060546875,
+            "response_time": 108.824951171875
+        },
+        "9/compressed/INTER_CUBIC/0.4/240x180/2/": {
+            "transfer_time": 64.3779296875,
+            "disk_write_time": 0.204345703125,
+            "response_time": 145.676025390625
+        },
+        "9/compressed/INTER_CUBIC/0.4/240x180/4/": {
+            "transfer_time": 62.51708984375,
+            "disk_write_time": 0.36865234375,
+            "response_time": 147.99462890625
+        },
+        "9/compressed/INTER_CUBIC/0.4/240x180/8/": {
+            "transfer_time": 63.859130859375,
+            "disk_write_time": 0.623779296875,
+            "response_time": 223.159912109375
+        },
+        "9/compressed/INTER_CUBIC/0.4/240x180/16/": {
+            "transfer_time": 64.102294921875,
+            "disk_write_time": 1.10595703125,
+            "response_time": 269.912353515625
+        },
+        "9/compressed/INTER_CUBIC/0.4/240x180/32/": {
+            "transfer_time": 66.03515625,
+            "disk_write_time": 2.26611328125,
+            "response_time": 354.725830078125
+        },
+        "9/compressed/INTER_CUBIC/0.5/240x180/1/": {
+            "transfer_time": 63.316162109375,
+            "disk_write_time": 0.10888671875,
+            "response_time": 109.71044921875
+        },
+        "9/compressed/INTER_CUBIC/0.5/240x180/2/": {
+            "transfer_time": 64.909423828125,
+            "disk_write_time": 0.2216796875,
+            "response_time": 150.184326171875
+        },
+        "9/compressed/INTER_CUBIC/0.5/240x180/4/": {
+            "transfer_time": 73.17724609375,
+            "disk_write_time": 0.384521484375,
+            "response_time": 191.53857421875
+        },
+        "9/compressed/INTER_CUBIC/0.5/240x180/8/": {
+            "transfer_time": 64.043701171875,
+            "disk_write_time": 0.68408203125,
+            "response_time": 228.869140625
+        },
+        "9/compressed/INTER_CUBIC/0.5/240x180/16/": {
+            "transfer_time": 65.05810546875,
+            "disk_write_time": 1.271240234375,
+            "response_time": 414.6689453125
+        },
+        "9/compressed/INTER_CUBIC/0.5/240x180/32/": {
+            "transfer_time": 64.594970703125,
+            "disk_write_time": 2.5107421875,
+            "response_time": 498.774169921875
+        },
+        "9/compressed/INTER_CUBIC/0.6/240x180/1/": {
+            "transfer_time": 64.53271484375,
+            "disk_write_time": 0.139892578125,
+            "response_time": 144.93310546875
+        },
+        "9/compressed/INTER_CUBIC/0.6/240x180/2/": {
+            "transfer_time": 63.780517578125,
+            "disk_write_time": 0.266357421875,
+            "response_time": 154.16259765625
+        },
+        "9/compressed/INTER_CUBIC/0.6/240x180/4/": {
+            "transfer_time": 64.663330078125,
+            "disk_write_time": 0.499755859375,
+            "response_time": 231.66357421875
+        },
+        "9/compressed/INTER_CUBIC/0.6/240x180/8/": {
+            "transfer_time": 64.06787109375,
+            "disk_write_time": 0.90625,
+            "response_time": 296.052490234375
+        },
+        "9/compressed/INTER_CUBIC/0.6/240x180/16/": {
+            "transfer_time": 63.987060546875,
+            "disk_write_time": 1.566162109375,
+            "response_time": 399.841796875
+        },
+        "9/compressed/INTER_CUBIC/0.6/240x180/32/": {
+            "transfer_time": 65.679443359375,
+            "disk_write_time": 2.90087890625,
+            "response_time": 404.5234375
+        },
+        "9/compressed/INTER_CUBIC/0.7/240x180/1/": {
+            "transfer_time": 64.552734375,
+            "disk_write_time": 0.1875,
+            "response_time": 154.55078125
+        },
+        "9/compressed/INTER_CUBIC/0.7/240x180/2/": {
+            "transfer_time": 62.299072265625,
+            "disk_write_time": 0.28369140625,
+            "response_time": 176.65869140625
+        },
+        "9/compressed/INTER_CUBIC/0.7/240x180/4/": {
+            "transfer_time": 64.66357421875,
+            "disk_write_time": 0.49853515625,
+            "response_time": 270.1396484375
+        },
+        "9/compressed/INTER_CUBIC/0.7/240x180/8/": {
+            "transfer_time": 63.78662109375,
+            "disk_write_time": 0.953857421875,
+            "response_time": 259.712646484375
+        },
+        "9/compressed/INTER_CUBIC/0.7/240x180/16/": {
+            "transfer_time": 64.43994140625,
+            "disk_write_time": 1.819091796875,
+            "response_time": 372.049072265625
+        },
+        "9/compressed/INTER_CUBIC/0.7/240x180/32/": {
+            "transfer_time": 64.94873046875,
+            "disk_write_time": 3.546142578125,
+            "response_time": 365.390625
+        },
+        "9/compressed/INTER_CUBIC/0.8/240x180/1/": {
+            "transfer_time": 62.489990234375,
+            "disk_write_time": 0.20556640625,
+            "response_time": 142.31591796875
+        },
+        "9/compressed/INTER_CUBIC/0.8/240x180/2/": {
+            "transfer_time": 63.592041015625,
+            "disk_write_time": 0.35595703125,
+            "response_time": 210.4404296875
+        },
+        "9/compressed/INTER_CUBIC/0.8/240x180/4/": {
+            "transfer_time": 64.909423828125,
+            "disk_write_time": 0.64404296875,
+            "response_time": 320.681396484375
+        },
+        "9/compressed/INTER_CUBIC/0.8/240x180/8/": {
+            "transfer_time": 64.513671875,
+            "disk_write_time": 1.07763671875,
+            "response_time": 308.0947265625
+        },
+        "9/compressed/INTER_CUBIC/0.8/240x180/16/": {
+            "transfer_time": 64.311767578125,
+            "disk_write_time": 2.142578125,
+            "response_time": 334.42041015625
+        },
+        "9/compressed/INTER_CUBIC/0.8/240x180/32/": {
+            "transfer_time": 65.0810546875,
+            "disk_write_time": 4.17041015625,
+            "response_time": 691.697021484375
+        },
+        "9/compressed/INTER_CUBIC/0.9/240x180/1/": {
+            "transfer_time": 64.97900390625,
+            "disk_write_time": 0.218017578125,
+            "response_time": 187.076171875
+        },
+        "9/compressed/INTER_CUBIC/0.9/240x180/2/": {
+            "transfer_time": 64.177978515625,
+            "disk_write_time": 0.373779296875,
+            "response_time": 232.909912109375
+        },
+        "9/compressed/INTER_CUBIC/0.9/240x180/4/": {
+            "transfer_time": 65.0576171875,
+            "disk_write_time": 0.670654296875,
+            "response_time": 316.877197265625
+        },
+        "9/compressed/INTER_CUBIC/0.9/240x180/8/": {
+            "transfer_time": 63.89306640625,
+            "disk_write_time": 1.439697265625,
+            "response_time": 397.788330078125
+        },
+        "9/compressed/INTER_CUBIC/0.9/240x180/16/": {
+            "transfer_time": 65.685791015625,
+            "disk_write_time": 4.306884765625,
+            "response_time": 576.668212890625
+        },
+        "9/compressed/INTER_CUBIC/0.9/240x180/32/": {
+            "transfer_time": 65.468505859375,
+            "disk_write_time": 4.896728515625,
+            "response_time": 369.879150390625
+        },
+        "9/compressed/INTER_CUBIC/1/240x180/1/": {
+            "transfer_time": 63.68115234375,
+            "disk_write_time": 0.219970703125,
+            "response_time": 188.13134765625
+        },
+        "9/compressed/INTER_CUBIC/1/240x180/2/": {
+            "transfer_time": 63.86669921875,
+            "disk_write_time": 0.413330078125,
+            "response_time": 268.54345703125
+        },
+        "9/compressed/INTER_CUBIC/1/240x180/4/": {
+            "transfer_time": 64.4013671875,
+            "disk_write_time": 0.826904296875,
+            "response_time": 313.583984375
+        },
+        "9/compressed/INTER_CUBIC/1/240x180/8/": {
+            "transfer_time": 63.059814453125,
+            "disk_write_time": 1.42529296875,
+            "response_time": 302.284423828125
+        },
+        "9/compressed/INTER_CUBIC/1/240x180/16/": {
+            "transfer_time": 65.798828125,
+            "disk_write_time": 3.11181640625,
+            "response_time": 785.095703125
+        },
+        "9/compressed/INTER_CUBIC/1/240x180/32/": {
+            "transfer_time": 68.173095703125,
+            "disk_write_time": 9.373291015625,
+            "response_time": 1050.4912109375
+        },
+        "9/compressed/INTER_AREA/0.1/240x180/1/": {
+            "transfer_time": 61.10546875,
+            "disk_write_time": 0.094970703125,
+            "response_time": 77.513427734375
+        },
+        "9/compressed/INTER_AREA/0.1/240x180/2/": {
+            "transfer_time": 63.36572265625,
+            "disk_write_time": 0.14599609375,
+            "response_time": 79.330810546875
+        },
+        "9/compressed/INTER_AREA/0.1/240x180/4/": {
+            "transfer_time": 65.665771484375,
+            "disk_write_time": 0.2236328125,
+            "response_time": 81.737548828125
+        },
+        "9/compressed/INTER_AREA/0.1/240x180/8/": {
+            "transfer_time": 73.04931640625,
+            "disk_write_time": 0.40576171875,
+            "response_time": 89.84619140625
+        },
+        "9/compressed/INTER_AREA/0.1/240x180/16/": {
+            "transfer_time": 73.392333984375,
+            "disk_write_time": 0.734375,
+            "response_time": 129.728271484375
+        },
+        "9/compressed/INTER_AREA/0.1/240x180/32/": {
+            "transfer_time": 74.461669921875,
+            "disk_write_time": 1.383544921875,
+            "response_time": 189.0185546875
+        },
+        "9/compressed/INTER_AREA/0.2/240x180/1/": {
+            "transfer_time": 62.837890625,
+            "disk_write_time": 0.098388671875,
+            "response_time": 78.76416015625
+        },
+        "9/compressed/INTER_AREA/0.2/240x180/2/": {
+            "transfer_time": 65.406982421875,
+            "disk_write_time": 0.15576171875,
+            "response_time": 81.61962890625
+        },
+        "9/compressed/INTER_AREA/0.2/240x180/4/": {
+            "transfer_time": 66.042724609375,
+            "disk_write_time": 0.2451171875,
+            "response_time": 114.126220703125
+        },
+        "9/compressed/INTER_AREA/0.2/240x180/8/": {
+            "transfer_time": 66.58740234375,
+            "disk_write_time": 0.470703125,
+            "response_time": 152.14794921875
+        },
+        "9/compressed/INTER_AREA/0.2/240x180/16/": {
+            "transfer_time": 67.779296875,
+            "disk_write_time": 0.80224609375,
+            "response_time": 176.362548828125
+        },
+        "9/compressed/INTER_AREA/0.2/240x180/32/": {
+            "transfer_time": 68.280029296875,
+            "disk_write_time": 1.54345703125,
+            "response_time": 264.6357421875
+        },
+        "9/compressed/INTER_AREA/0.3/240x180/1/": {
+            "transfer_time": 63.218994140625,
+            "disk_write_time": 0.095703125,
+            "response_time": 85.881103515625
+        },
+        "9/compressed/INTER_AREA/0.3/240x180/2/": {
+            "transfer_time": 66.67041015625,
+            "disk_write_time": 1.76904296875,
+            "response_time": 114.63232421875
+        },
+        "9/compressed/INTER_AREA/0.3/240x180/4/": {
+            "transfer_time": 64.568115234375,
+            "disk_write_time": 0.2734375,
+            "response_time": 147.40673828125
+        },
+        "9/compressed/INTER_AREA/0.3/240x180/8/": {
+            "transfer_time": 65.219970703125,
+            "disk_write_time": 0.471435546875,
+            "response_time": 156.735595703125
+        },
+        "9/compressed/INTER_AREA/0.3/240x180/16/": {
+            "transfer_time": 65.365234375,
+            "disk_write_time": 0.865234375,
+            "response_time": 235.055419921875
+        },
+        "9/compressed/INTER_AREA/0.3/240x180/32/": {
+            "transfer_time": 64.45166015625,
+            "disk_write_time": 1.64892578125,
+            "response_time": 290.6220703125
+        },
+        "9/compressed/INTER_AREA/0.4/240x180/1/": {
+            "transfer_time": 63.4931640625,
+            "disk_write_time": 0.133056640625,
+            "response_time": 108.95703125
+        },
+        "9/compressed/INTER_AREA/0.4/240x180/2/": {
+            "transfer_time": 63.50341796875,
+            "disk_write_time": 0.19873046875,
+            "response_time": 143.552978515625
+        },
+        "9/compressed/INTER_AREA/0.4/240x180/4/": {
+            "transfer_time": 63.172119140625,
+            "disk_write_time": 0.329345703125,
+            "response_time": 149.841796875
+        },
+        "9/compressed/INTER_AREA/0.4/240x180/8/": {
+            "transfer_time": 64.070556640625,
+            "disk_write_time": 0.632080078125,
+            "response_time": 236.564208984375
+        },
+        "9/compressed/INTER_AREA/0.4/240x180/16/": {
+            "transfer_time": 64.85302734375,
+            "disk_write_time": 1.12841796875,
+            "response_time": 315.335205078125
+        },
+        "9/compressed/INTER_AREA/0.4/240x180/32/": {
+            "transfer_time": 65.6162109375,
+            "disk_write_time": 2.151123046875,
+            "response_time": 522.62451171875
+        },
+        "9/compressed/INTER_AREA/0.5/240x180/1/": {
+            "transfer_time": 62.473876953125,
+            "disk_write_time": 0.121337890625,
+            "response_time": 108.193359375
+        },
+        "9/compressed/INTER_AREA/0.5/240x180/2/": {
+            "transfer_time": 64.607666015625,
+            "disk_write_time": 0.1953125,
+            "response_time": 150.37109375
+        },
+        "9/compressed/INTER_AREA/0.5/240x180/4/": {
+            "transfer_time": 63.612060546875,
+            "disk_write_time": 0.404052734375,
+            "response_time": 193.19775390625
+        },
+        "9/compressed/INTER_AREA/0.5/240x180/8/": {
+            "transfer_time": 63.682373046875,
+            "disk_write_time": 0.7490234375,
+            "response_time": 291.37646484375
+        },
+        "9/compressed/INTER_AREA/0.5/240x180/16/": {
+            "transfer_time": 65.223388671875,
+            "disk_write_time": 1.255859375,
+            "response_time": 431.284423828125
+        },
+        "9/compressed/INTER_AREA/0.5/240x180/32/": {
+            "transfer_time": 64.28125,
+            "disk_write_time": 2.425048828125,
+            "response_time": 400.93017578125
+        },
+        "9/compressed/INTER_AREA/0.6/240x180/1/": {
+            "transfer_time": 73.981689453125,
+            "disk_write_time": 0.18115234375,
+            "response_time": 154.880859375
+        },
+        "9/compressed/INTER_AREA/0.6/240x180/2/": {
+            "transfer_time": 64.651611328125,
+            "disk_write_time": 0.26318359375,
+            "response_time": 155.87255859375
+        },
+        "9/compressed/INTER_AREA/0.6/240x180/4/": {
+            "transfer_time": 63.721435546875,
+            "disk_write_time": 0.4140625,
+            "response_time": 227.167236328125
+        },
+        "9/compressed/INTER_AREA/0.6/240x180/8/": {
+            "transfer_time": 64.898681640625,
+            "disk_write_time": 0.79443359375,
+            "response_time": 307.472412109375
+        },
+        "9/compressed/INTER_AREA/0.6/240x180/16/": {
+            "transfer_time": 65.13427734375,
+            "disk_write_time": 4.365966796875,
+            "response_time": 437.002685546875
+        },
+        "9/compressed/INTER_AREA/0.6/240x180/32/": {
+            "transfer_time": 65.717529296875,
+            "disk_write_time": 3.037841796875,
+            "response_time": 529.345947265625
+        },
+        "9/compressed/INTER_AREA/0.7/240x180/1/": {
+            "transfer_time": 63.52490234375,
+            "disk_write_time": 0.161376953125,
+            "response_time": 144.961669921875
+        },
+        "9/compressed/INTER_AREA/0.7/240x180/2/": {
+            "transfer_time": 63.66064453125,
+            "disk_write_time": 0.2802734375,
+            "response_time": 190.36181640625
+        },
+        "9/compressed/INTER_AREA/0.7/240x180/4/": {
+            "transfer_time": 64.732666015625,
+            "disk_write_time": 0.502685546875,
+            "response_time": 279.828857421875
+        },
+        "9/compressed/INTER_AREA/0.7/240x180/8/": {
+            "transfer_time": 63.92041015625,
+            "disk_write_time": 0.99462890625,
+            "response_time": 282.239990234375
+        },
+        "9/compressed/INTER_AREA/0.7/240x180/16/": {
+            "transfer_time": 63.1708984375,
+            "disk_write_time": 1.7646484375,
+            "response_time": 304.4853515625
+        },
+        "9/compressed/INTER_AREA/0.7/240x180/32/": {
+            "transfer_time": 65.802734375,
+            "disk_write_time": 3.34912109375,
+            "response_time": 355.023193359375
+        },
+        "9/compressed/INTER_AREA/0.8/240x180/1/": {
+            "transfer_time": 63.3154296875,
+            "disk_write_time": 0.189208984375,
+            "response_time": 144.42724609375
+        },
+        "9/compressed/INTER_AREA/0.8/240x180/2/": {
+            "transfer_time": 63.4453125,
+            "disk_write_time": 0.33837890625,
+            "response_time": 224.883056640625
+        },
+        "9/compressed/INTER_AREA/0.8/240x180/4/": {
+            "transfer_time": 64.668212890625,
+            "disk_write_time": 0.602294921875,
+            "response_time": 290.8681640625
+        },
+        "9/compressed/INTER_AREA/0.8/240x180/8/": {
+            "transfer_time": 65.041015625,
+            "disk_write_time": 1.14697265625,
+            "response_time": 454.03857421875
+        },
+        "9/compressed/INTER_AREA/0.8/240x180/16/": {
+            "transfer_time": 64.979248046875,
+            "disk_write_time": 2.28515625,
+            "response_time": 474.039306640625
+        },
+        "9/compressed/INTER_AREA/0.8/240x180/32/": {
+            "transfer_time": 65.12255859375,
+            "disk_write_time": 4.27978515625,
+            "response_time": 684.7509765625
+        },
+        "9/compressed/INTER_AREA/0.9/240x180/1/": {
+            "transfer_time": 63.522705078125,
+            "disk_write_time": 0.215576171875,
+            "response_time": 183.49609375
+        },
+        "9/compressed/INTER_AREA/0.9/240x180/2/": {
+            "transfer_time": 64.928466796875,
+            "disk_write_time": 0.385009765625,
+            "response_time": 270.677490234375
+        },
+        "9/compressed/INTER_AREA/0.9/240x180/4/": {
+            "transfer_time": 62.789794921875,
+            "disk_write_time": 1.93994140625,
+            "response_time": 283.58544921875
+        },
+        "9/compressed/INTER_AREA/0.9/240x180/8/": {
+            "transfer_time": 64.198486328125,
+            "disk_write_time": 1.287109375,
+            "response_time": 373.037353515625
+        },
+        "9/compressed/INTER_AREA/0.9/240x180/16/": {
+            "transfer_time": 66.009033203125,
+            "disk_write_time": 2.602783203125,
+            "response_time": 682.815185546875
+        },
+        "9/compressed/INTER_AREA/0.9/240x180/32/": {
+            "transfer_time": 65.71044921875,
+            "disk_write_time": 4.8134765625,
+            "response_time": 495.576904296875
+        },
+        "9/compressed/INTER_AREA/1/240x180/1/": {
+            "transfer_time": 62.5498046875,
+            "disk_write_time": 0.26123046875,
+            "response_time": 204.552001953125
+        },
+        "9/compressed/INTER_AREA/1/240x180/2/": {
+            "transfer_time": 64.830322265625,
+            "disk_write_time": 0.4365234375,
+            "response_time": 274.469970703125
+        },
+        "9/compressed/INTER_AREA/1/240x180/4/": {
+            "transfer_time": 62.60498046875,
+            "disk_write_time": 0.72802734375,
+            "response_time": 302.450439453125
+        },
+        "9/compressed/INTER_AREA/1/240x180/8/": {
+            "transfer_time": 64.287109375,
+            "disk_write_time": 1.5283203125,
+            "response_time": 552.8876953125
+        },
+        "9/compressed/INTER_AREA/1/240x180/16/": {
+            "transfer_time": 64.590087890625,
+            "disk_write_time": 2.836669921875,
+            "response_time": 443.068359375
+        },
+        "9/compressed/INTER_AREA/1/240x180/32/": {
+            "transfer_time": 67.24267578125,
+            "disk_write_time": 8.11865234375,
+            "response_time": 653.23486328125
+        },
+        "9/compressed/INTER_LANCZOS4/0.1/240x180/1/": {
+            "transfer_time": 61.6435546875,
+            "disk_write_time": 0.080810546875,
+            "response_time": 77.482666015625
+        },
+        "9/compressed/INTER_LANCZOS4/0.1/240x180/2/": {
+            "transfer_time": 62.49755859375,
+            "disk_write_time": 0.15869140625,
+            "response_time": 78.3310546875
+        },
+        "9/compressed/INTER_LANCZOS4/0.1/240x180/4/": {
+            "transfer_time": 66.821533203125,
+            "disk_write_time": 0.2314453125,
+            "response_time": 82.94580078125
+        },
+        "9/compressed/INTER_LANCZOS4/0.1/240x180/8/": {
+            "transfer_time": 72.71826171875,
+            "disk_write_time": 0.351318359375,
+            "response_time": 89.1416015625
+        },
+        "9/compressed/INTER_LANCZOS4/0.1/240x180/16/": {
+            "transfer_time": 73.577880859375,
+            "disk_write_time": 0.696044921875,
+            "response_time": 129.801025390625
+        },
+        "9/compressed/INTER_LANCZOS4/0.1/240x180/32/": {
+            "transfer_time": 75.9833984375,
+            "disk_write_time": 1.341796875,
+            "response_time": 191.267578125
+        },
+        "9/compressed/INTER_LANCZOS4/0.2/240x180/1/": {
+            "transfer_time": 61.129150390625,
+            "disk_write_time": 0.079345703125,
+            "response_time": 76.97705078125
+        },
+        "9/compressed/INTER_LANCZOS4/0.2/240x180/2/": {
+            "transfer_time": 64.2783203125,
+            "disk_write_time": 0.150634765625,
+            "response_time": 80.396728515625
+        },
+        "9/compressed/INTER_LANCZOS4/0.2/240x180/4/": {
+            "transfer_time": 66.068115234375,
+            "disk_write_time": 0.27001953125,
+            "response_time": 113.366455078125
+        },
+        "9/compressed/INTER_LANCZOS4/0.2/240x180/8/": {
+            "transfer_time": 65.0537109375,
+            "disk_write_time": 1.914306640625,
+            "response_time": 150.765869140625
+        },
+        "9/compressed/INTER_LANCZOS4/0.2/240x180/16/": {
+            "transfer_time": 67.74072265625,
+            "disk_write_time": 0.78466796875,
+            "response_time": 176.645263671875
+        },
+        "9/compressed/INTER_LANCZOS4/0.2/240x180/32/": {
+            "transfer_time": 67.144775390625,
+            "disk_write_time": 1.5224609375,
+            "response_time": 260.502685546875
+        },
+        "9/compressed/INTER_LANCZOS4/0.3/240x180/1/": {
+            "transfer_time": 64.172119140625,
+            "disk_write_time": 0.0966796875,
+            "response_time": 80.205078125
+        },
+        "9/compressed/INTER_LANCZOS4/0.3/240x180/2/": {
+            "transfer_time": 64.994140625,
+            "disk_write_time": 0.15869140625,
+            "response_time": 110.825927734375
+        },
+        "9/compressed/INTER_LANCZOS4/0.3/240x180/4/": {
+            "transfer_time": 64.477294921875,
+            "disk_write_time": 0.28271484375,
+            "response_time": 145.383544921875
+        },
+        "9/compressed/INTER_LANCZOS4/0.3/240x180/8/": {
+            "transfer_time": 65.13818359375,
+            "disk_write_time": 0.502685546875,
+            "response_time": 164.243896484375
+        },
+        "9/compressed/INTER_LANCZOS4/0.3/240x180/16/": {
+            "transfer_time": 64.772216796875,
+            "disk_write_time": 0.851806640625,
+            "response_time": 237.670654296875
+        },
+        "9/compressed/INTER_LANCZOS4/0.3/240x180/32/": {
+            "transfer_time": 67.086181640625,
+            "disk_write_time": 1.629150390625,
+            "response_time": 320.367919921875
+        },
+        "9/compressed/INTER_LANCZOS4/0.4/240x180/1/": {
+            "transfer_time": 63.2080078125,
+            "disk_write_time": 0.150146484375,
+            "response_time": 108.88818359375
+        },
+        "9/compressed/INTER_LANCZOS4/0.4/240x180/2/": {
+            "transfer_time": 63.172607421875,
+            "disk_write_time": 0.210205078125,
+            "response_time": 141.527099609375
+        },
+        "9/compressed/INTER_LANCZOS4/0.4/240x180/4/": {
+            "transfer_time": 63.68359375,
+            "disk_write_time": 0.322998046875,
+            "response_time": 155.59521484375
+        },
+        "9/compressed/INTER_LANCZOS4/0.4/240x180/8/": {
+            "transfer_time": 64.62939453125,
+            "disk_write_time": 0.613525390625,
+            "response_time": 228.61474609375
+        },
+        "9/compressed/INTER_LANCZOS4/0.4/240x180/16/": {
+            "transfer_time": 65.303955078125,
+            "disk_write_time": 1.662109375,
+            "response_time": 317.3671875
+        },
+        "9/compressed/INTER_LANCZOS4/0.4/240x180/32/": {
+            "transfer_time": 64.677978515625,
+            "disk_write_time": 2.132568359375,
+            "response_time": 333.38916015625
+        },
+        "9/compressed/INTER_LANCZOS4/0.5/240x180/1/": {
+            "transfer_time": 63.25390625,
+            "disk_write_time": 0.131103515625,
+            "response_time": 110.589599609375
+        },
+        "9/compressed/INTER_LANCZOS4/0.5/240x180/2/": {
+            "transfer_time": 63.628662109375,
+            "disk_write_time": 0.218505859375,
+            "response_time": 148.3359375
+        },
+        "9/compressed/INTER_LANCZOS4/0.5/240x180/4/": {
+            "transfer_time": 64.64404296875,
+            "disk_write_time": 0.4375,
+            "response_time": 195.1083984375
+        },
+        "9/compressed/INTER_LANCZOS4/0.5/240x180/8/": {
+            "transfer_time": 65.853759765625,
+            "disk_write_time": 0.730712890625,
+            "response_time": 251.777099609375
+        },
+        "9/compressed/INTER_LANCZOS4/0.5/240x180/16/": {
+            "transfer_time": 64.054443359375,
+            "disk_write_time": 1.33056640625,
+            "response_time": 339.53125
+        },
+        "9/compressed/INTER_LANCZOS4/0.5/240x180/32/": {
+            "transfer_time": 65.03125,
+            "disk_write_time": 2.4306640625,
+            "response_time": 347.975341796875
+        },
+        "9/compressed/INTER_LANCZOS4/0.6/240x180/1/": {
+            "transfer_time": 63.39404296875,
+            "disk_write_time": 0.16064453125,
+            "response_time": 140.054443359375
+        },
+        "9/compressed/INTER_LANCZOS4/0.6/240x180/2/": {
+            "transfer_time": 63.689453125,
+            "disk_write_time": 0.252197265625,
+            "response_time": 153.535888671875
+        },
+        "9/compressed/INTER_LANCZOS4/0.6/240x180/4/": {
+            "transfer_time": 64.159912109375,
+            "disk_write_time": 0.462890625,
+            "response_time": 233.46044921875
+        },
+        "9/compressed/INTER_LANCZOS4/0.6/240x180/8/": {
+            "transfer_time": 63.839111328125,
+            "disk_write_time": 2.217529296875,
+            "response_time": 316.86328125
+        },
+        "9/compressed/INTER_LANCZOS4/0.6/240x180/16/": {
+            "transfer_time": 65.19775390625,
+            "disk_write_time": 1.53076171875,
+            "response_time": 316.0869140625
+        },
+        "9/compressed/INTER_LANCZOS4/0.6/240x180/32/": {
+            "transfer_time": 63.77587890625,
+            "disk_write_time": 2.8876953125,
+            "response_time": 330.12158203125
+        },
+        "9/compressed/INTER_LANCZOS4/0.7/240x180/1/": {
+            "transfer_time": 63.619384765625,
+            "disk_write_time": 0.166015625,
+            "response_time": 146.313720703125
+        },
+        "9/compressed/INTER_LANCZOS4/0.7/240x180/2/": {
+            "transfer_time": 62.57861328125,
+            "disk_write_time": 0.292724609375,
+            "response_time": 178.745361328125
+        },
+        "9/compressed/INTER_LANCZOS4/0.7/240x180/4/": {
+            "transfer_time": 62.9287109375,
+            "disk_write_time": 0.48779296875,
+            "response_time": 248.84228515625
+        },
+        "9/compressed/INTER_LANCZOS4/0.7/240x180/8/": {
+            "transfer_time": 65.0244140625,
+            "disk_write_time": 0.9697265625,
+            "response_time": 422.783935546875
+        },
+        "9/compressed/INTER_LANCZOS4/0.7/240x180/16/": {
+            "transfer_time": 65.08251953125,
+            "disk_write_time": 1.888671875,
+            "response_time": 632.73828125
+        },
+        "9/compressed/INTER_LANCZOS4/0.7/240x180/32/": {
+            "transfer_time": 65.167236328125,
+            "disk_write_time": 6.387939453125,
+            "response_time": 794.824951171875
+        },
+        "9/compressed/INTER_LANCZOS4/0.8/240x180/1/": {
+            "transfer_time": 64.52294921875,
+            "disk_write_time": 0.197509765625,
+            "response_time": 151.675048828125
+        },
+        "9/compressed/INTER_LANCZOS4/0.8/240x180/2/": {
+            "transfer_time": 63.138916015625,
+            "disk_write_time": 0.329833984375,
+            "response_time": 224.0205078125
+        },
+        "9/compressed/INTER_LANCZOS4/0.8/240x180/4/": {
+            "transfer_time": 64.771240234375,
+            "disk_write_time": 0.639892578125,
+            "response_time": 291.800048828125
+        },
+        "9/compressed/INTER_LANCZOS4/0.8/240x180/8/": {
+            "transfer_time": 69.520751953125,
+            "disk_write_time": 1.10595703125,
+            "response_time": 453.22607421875
+        },
+        "9/compressed/INTER_LANCZOS4/0.8/240x180/16/": {
+            "transfer_time": 64.0654296875,
+            "disk_write_time": 2.1865234375,
+            "response_time": 433.68310546875
+        },
+        "9/compressed/INTER_LANCZOS4/0.8/240x180/32/": {
+            "transfer_time": 64.881103515625,
+            "disk_write_time": 4.1279296875,
+            "response_time": 875.153076171875
+        },
+        "9/compressed/INTER_LANCZOS4/0.9/240x180/1/": {
+            "transfer_time": 64.705810546875,
+            "disk_write_time": 0.206787109375,
+            "response_time": 185.747802734375
+        },
+        "9/compressed/INTER_LANCZOS4/0.9/240x180/2/": {
+            "transfer_time": 63.757568359375,
+            "disk_write_time": 0.3642578125,
+            "response_time": 269.319091796875
+        },
+        "9/compressed/INTER_LANCZOS4/0.9/240x180/4/": {
+            "transfer_time": 63.975341796875,
+            "disk_write_time": 0.676513671875,
+            "response_time": 288.4169921875
+        },
+        "9/compressed/INTER_LANCZOS4/0.9/240x180/8/": {
+            "transfer_time": 64.051025390625,
+            "disk_write_time": 1.236328125,
+            "response_time": 381.51123046875
+        },
+        "9/compressed/INTER_LANCZOS4/0.9/240x180/16/": {
+            "transfer_time": 64.703369140625,
+            "disk_write_time": 2.44677734375,
+            "response_time": 398.489013671875
+        },
+        "9/compressed/INTER_LANCZOS4/0.9/240x180/32/": {
+            "transfer_time": 65.99169921875,
+            "disk_write_time": 4.871826171875,
+            "response_time": 1047.8671875
+        },
+        "9/compressed/INTER_LANCZOS4/1/240x180/1/": {
+            "transfer_time": 64.630615234375,
+            "disk_write_time": 0.25634765625,
+            "response_time": 190.223388671875
+        },
+        "9/compressed/INTER_LANCZOS4/1/240x180/2/": {
+            "transfer_time": 65.03271484375,
+            "disk_write_time": 0.44287109375,
+            "response_time": 307.1513671875
+        },
+        "9/compressed/INTER_LANCZOS4/1/240x180/4/": {
+            "transfer_time": 64.138916015625,
+            "disk_write_time": 0.821044921875,
+            "response_time": 366.837890625
+        },
+        "9/compressed/INTER_LANCZOS4/1/240x180/8/": {
+            "transfer_time": 65.14990234375,
+            "disk_write_time": 1.49609375,
+            "response_time": 526.615478515625
+        },
+        "9/compressed/INTER_LANCZOS4/1/240x180/16/": {
+            "transfer_time": 64.89013671875,
+            "disk_write_time": 2.8408203125,
+            "response_time": 475.574462890625
+        },
+        "9/compressed/INTER_LANCZOS4/1/240x180/32/": {
+            "transfer_time": 67.91650390625,
+            "disk_write_time": 8.605712890625,
+            "response_time": 411.603271484375
+        }
+    },
+    "original": {
+        "9/original/240x180/1/": {
+            "transfer_time": 63.358154296875,
+            "disk_write_time": 0.24365234375,
+            "response_time": 180.171875
+        },
+        "9/original/240x180/2/": {
+            "transfer_time": 64.00146484375,
+            "disk_write_time": 0.417236328125,
+            "response_time": 271.52685546875
+        },
+        "9/original/240x180/4/": {
+            "transfer_time": 73.083740234375,
+            "disk_write_time": 0.760986328125,
+            "response_time": 301.1865234375
+        },
+        "9/original/240x180/8/": {
+            "transfer_time": 65.49169921875,
+            "disk_write_time": 1.425048828125,
+            "response_time": 517.2978515625
+        },
+        "9/original/240x180/16/": {
+            "transfer_time": 65.326416015625,
+            "disk_write_time": 2.83349609375,
+            "response_time": 354.8623046875
+        },
+        "9/original/240x180/32/": {
+            "transfer_time": 67.34423828125,
+            "disk_write_time": 5.4326171875,
+            "response_time": 405.5625
+        }
+    }
+}

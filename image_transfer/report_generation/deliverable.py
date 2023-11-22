@@ -1,10 +1,12 @@
 import pandas as pd
 
 raw_results_base_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/raw_results"
-parts = ["compression", "decompression", "transfer"]
+#parts = ["compression", "decompression", "transfer"]
+parts = ["transfer"]
 transfer_image_type = ["original", "compressed"]
 transfer_time_type = ["transfer_time", "disk_write_time", "response_time"]
-resolutions = ['160x90', '160x100', '160x120', '320x180', '320x200', '320x240', '480x270', '480x300', '480x360', '640x360', '640x400', '640x480', '800x450', '800x500', '800x600', '1024x576', '1024x640', '1024x768', '1280x720', '1280x800', '1280x960', '1440x900', '1440x1080', '1920x1080']
+# resolutions = ['160x90', '160x100', '160x120', '320x180', '320x200', '320x240', '480x270', '480x300', '480x360', '640x360', '640x400', '640x480', '800x450', '800x500', '800x600', '1024x576', '1024x640', '1024x768', '1280x720', '1280x800', '1280x960', '1440x900', '1440x1080', '1920x1080']
+resolutions = ['240x180']
 frames = [1, 2, 4, 8, 16, 32]
 total_experiment = 10
 scaling_factors = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
@@ -45,18 +47,18 @@ for ip_method in ip_methods:
 output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "compressed_image_transfer.csv"
 merge_csv_files_with_empty_column(csv_list, output_csv_path)
 
-# compression
-csv_list = []
-for ip_method in ip_methods:
-    for scaling_factor in scaling_factors:
-        csv_list.append("/home/rouf-linux/edge-computing/image_transfer/report_generation/csv/compression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
-output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_compression_time.csv"
-merge_csv_files_with_empty_column(csv_list, output_csv_path)
+# # compression
+# csv_list = []
+# for ip_method in ip_methods:
+#     for scaling_factor in scaling_factors:
+#         csv_list.append("/home/rouf-linux/edge-computing/image_transfer/report_generation/csv/compression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
+# output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_compression_time.csv"
+# merge_csv_files_with_empty_column(csv_list, output_csv_path)
 
-# decompression
-csv_list = []
-for ip_method in ip_methods:
-    for scaling_factor in scaling_factors:
-        csv_list.append("/home/rouf-linux/edge-computing/image_transfer/report_generation/csv/decompression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
-output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_decompression_time.csv"
-merge_csv_files_with_empty_column(csv_list, output_csv_path)
+# # decompression
+# csv_list = []
+# for ip_method in ip_methods:
+#     for scaling_factor in scaling_factors:
+#         csv_list.append("/home/rouf-linux/edge-computing/image_transfer/report_generation/csv/decompression" + "/" + ip_method + "/" + str(scaling_factor) + ".csv")
+# output_csv_path = "/home/rouf-linux/edge-computing/image_transfer/report_generation/deliverable_csv" + "/" + "image_decompression_time.csv"
+# merge_csv_files_with_empty_column(csv_list, output_csv_path)

@@ -14,7 +14,7 @@ upload_url = f"http://{ip_addr}:5000/upload"  # Use an f-string
 data_path = "/home/rouf-linux/compression_data"
 compressed_data_path = data_path + "/compressed"
 original_data_path = data_path + "/original"
-result_path = "/home/rouf-linux/edge-computing/image_transfer/client/n_cal"
+result_path = "/home/rouf-linux/edge-computing/image_transfer/client/n_cal_240_180"
 
 # resolutions = ['160x90', '160x100', '160x120', '240x180', '320x180', '320x200', '320x240', '480x270', '480x300', '480x360', '640x360', '640x400', '640x480', '800x450', '800x500', '800x600', '1024x576', '1024x640', '1024x768', '1280x720', '1280x800', '1280x960', '1440x900', '1440x1080', '1920x1080']
 resolutions = ['240x180']
@@ -121,5 +121,5 @@ for i in range(1, total_experiment):
         "compressed": compressed_result,
         "original": origianl_result
     }
-    save_data_as_json(result, "/home/rouf-linux/edge-computing/image_transfer/client/n_cal/" + str(i) + ".json")
+    save_data_as_json(result, result_path + "/" + str(i) + ".json")
 
