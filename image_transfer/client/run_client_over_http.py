@@ -8,7 +8,7 @@ logging.basicConfig(filename='clinet.log', level=logging.INFO, format='%(asctime
 logger = logging.getLogger(__name__)
 
 # Specify the URL of your Flask server
-ip_addr = '52.53.184.154'
+ip_addr = '52.53.210.250'
 upload_url = f"http://{ip_addr}:5000/upload"  # Use an f-string
 
 data_path = "/home/rouf-linux/compression_data"
