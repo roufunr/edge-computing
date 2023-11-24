@@ -120,8 +120,8 @@ def delete_all_images():
         logger.info("Request failed:")
 
 for i in range(1): 
-    # compressed_result = transfer_compressed_image(i)
-    origianl_result = transfer_original_image(i)
+    compressed_result = transfer_compressed_image(i)
+    # origianl_result = transfer_original_image(i)
     # result = {
     #     "compressed": compressed_result,
     #     "original": origianl_result
