@@ -14,6 +14,6 @@ def convert_to_jpeg(path):
     
 for cam in resolutions:
     for resolution in resolutions[cam]:
-        path = "/home/jtx2/data/original" + cam + "/" + resolution
+        path = "/home/jtx2/data/original/" + cam + "/" + resolution
         convert_to_jpeg(path)
         
