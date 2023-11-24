@@ -77,7 +77,7 @@ def run_experiment(exp_id):
                     upscaled_image, elapsed_time = upscale(compressed_image_path, scaling_factor, interpolation_methods[ip_method])
                     exp_dict[key] = elapsed_time
                     
-                    logger.info(key + "   DONE!")
+                    logger.info(exp_id + " :::: " + key + "   DONE!")
     save_data_as_json(exp_dict, "/home/rouf-linux/edge-computing/image_transfer/decompress/tx2i/" + str(exp_id) + ".json")
 
 for exp_id in range(total_experiment):
