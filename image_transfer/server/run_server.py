@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Specify the upload directory
-upload_path = "/home/ubuntu/data"
+upload_path = "/home/jtx2/data"
 
 # Define allowed extensions for images
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'bmp'}
