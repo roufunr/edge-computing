@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/home/rouf-linux/edge-computing/image_transfer/client/run_client_over_http.py", line 118, in <module>
-    compressed_result = transfer_compressed_image(i)
-  File "/home/rouf-linux/edge-computing/image_transfer/client/run_client_over_http.py", line 67, in transfer_compressed_image
-    image_files.append(("images", (image_name, open(image_absolute_path, 'rb'))))
-FileNotFoundError: [Errno 2] No such file or directory: '/home/rouf-linux/compression_data/compressed/INTER_NEAREST/0.1/240x180/1/0.bmp'
