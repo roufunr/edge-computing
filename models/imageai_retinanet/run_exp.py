@@ -36,14 +36,13 @@ def run_detection(model, image_path):
     end_time = time() * 1000
     return end_time - start_time
     
-def run_exp(exp_id):
+def run_exp(exp_id, model):
     exp_data = {}
     total_data = 0
     done_data = 0
     for cam in resolutions:
         total_data += len(resolutions[cam])
     
-    model = get_model()
     for cam in resolutions:
         for resolution in resolutions[cam]:
             key = cam + "/" + resolution
@@ -62,10 +61,10 @@ def save_as_json(data, path):
     
     logger.info("Generated :::: " + path + " !")          
             
-            
+model = get_model()
 for i in range(11):
-    data = run_exp(i)
-    save_as_json(data, "/home/rouf-linux/edge-computing/models/imageai_retinanet/results/" + str(i) + ".json")
+    data = run_exp(i, model)
+    save_as_json(data, "/home/jtx2/edge-computing/models/imageai_retinanet/results/" + str(i) + ".json")
 
 
 

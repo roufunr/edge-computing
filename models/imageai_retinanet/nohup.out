@@ -1,0 +1,18 @@
+/home/jtx2/.local/lib/python3.6/site-packages/torch/functional.py:445: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  /media/nvidia/NVME/pytorch/pytorch-v1.10.0/aten/src/ATen/native/TensorShape.cpp:2157.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Traceback (most recent call last):
+  File "run_exp.py", line 68, in <module>
+    save_as_json(data, "/home/rouf-linux/edge-computing/models/imageai_retinanet/results/" + str(i) + ".json")
+  File "run_exp.py", line 60, in save_as_json
+    with open(path, 'w') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/rouf-linux/edge-computing/models/imageai_retinanet/results/0.json'
+/home/jtx2/.local/lib/python3.6/site-packages/torch/functional.py:445: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  /media/nvidia/NVME/pytorch/pytorch-v1.10.0/aten/src/ATen/native/TensorShape.cpp:2157.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Traceback (most recent call last):
+  File "run_exp.py", line 68, in <module>
+    save_as_json(data, "/home/jtx2/edge-computing/models/imageai_retinanet/results/" + str(i) + ".json")
+  File "run_exp.py", line 60, in save_as_json
+    with open(path, 'w') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jtx2/edge-computing/models/imageai_retinanet/results/0.json'
+/home/jtx2/.local/lib/python3.6/site-packages/torch/functional.py:445: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  /media/nvidia/NVME/pytorch/pytorch-v1.10.0/aten/src/ATen/native/TensorShape.cpp:2157.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
