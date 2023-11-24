@@ -62,7 +62,7 @@ def transfer_compressed_image(exp_id):
                 for scaling_factor in scaling_factors: 
                     image_files = []
                     image_name = "0.jpeg" if cam == "cam4" else "0.bmp"
-                    key = cam + "/" + resolution + "/" + ip_method + "/" + str(scaling_factor)
+                    key = cam + "/" + resolution + "/" + ip_method + "/" + str(scaling_factor) + "/"
                     image_absolute_path = compressed_data_path + "/" + key + "/" + image_name
                     image_files.append(("images", (image_name, open(image_absolute_path, 'rb'))))
                     start_time = time.time() * 1000
@@ -89,7 +89,7 @@ def transfer_original_image(exp_id):
         for resolution in resolutions[cam]:
             image_files = []
             image_name = "0.jpeg" if cam == "cam4" else "0.bmp"
-            key = cam + "/" + resolution
+            key = cam + "/" + resolution + "/"
             image_absolute_path = original_data_path + "/" + key + "/" + image_name
             image_files.append(("images", (image_name, open(image_absolute_path, 'rb'))))
             start_time = time.time() * 1000
@@ -121,7 +121,7 @@ def delete_all_images():
 
 for i in range(1): 
     compressed_result = transfer_compressed_image(i)
-    # origianl_result = transfer_original_image(i)
+    origianl_result = transfer_original_image(i)
     # result = {
     #     "compressed": compressed_result,
     #     "original": origianl_result
