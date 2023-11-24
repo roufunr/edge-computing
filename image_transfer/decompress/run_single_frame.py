@@ -74,6 +74,7 @@ def run_experiment(exp_id):
                     key = cam + "/" + resolution + "/" + ip_method + "/" + str(scaling_factor)
                     compressed_image_path = compressed_image_base_path + "/" + key + "/"
                     compressed_image_path += ("0.jpeg" if cam == "cam4" else "0.bmp")
+                    print(compressed_image_path)
                     upscaled_image, elapsed_time = upscale(compressed_image_path, scaling_factor, interpolation_methods[ip_method])
                     exp_dict[key] = elapsed_time
                     
