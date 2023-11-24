@@ -1,7 +1,7 @@
 import requests
 import json
 import time
-from datetime import datetime  # Import datetime module
+from datetime import datetime 
 import logging
 logging.basicConfig(filename='clinet.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 # Create a logger
