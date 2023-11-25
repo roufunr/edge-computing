@@ -84,7 +84,7 @@ def generate_csv(median):
                     row.append(round(median[key],2))
                 row.append("         ")
             rows.append(row)
-        create_csv_from_2d_list(rows, "/home/rouf-linux/edge-computing/tx2i_report_generation/csv/compressed_image_transfer/" + cam + ".json")
+        create_csv_from_2d_list(rows, "/home/rouf-linux/edge-computing/tx2i_report_generation/csv/compressed_image_transfer/" + cam + ".csv")
             
     
     
