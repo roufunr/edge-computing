@@ -83,7 +83,7 @@ def generate_csv(median):
                     row.append(round(median[key],4))
                 row.append("         ")
             rows.append(row)
-        create_csv_from_2d_list(rows, "/home/rouf-linux/edge-computing/tx2i_report_generation/csv/decompression_time/" + cam + ".json")
+        create_csv_from_2d_list(rows, "/home/rouf-linux/edge-computing/tx2i_report_generation/csv/decompression_time/" + cam + ".csv")
             
     
     
